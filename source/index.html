@@ -5,63 +5,70 @@
 	<title>Главная Pink</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+ <!-- ADAPTIVITY -->
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 </head>
 <body>
 	<header class="page-header">
-		<nav class="main-nav">
-			<div class="main-nav__top-menu">
-				<a class="page-header__logo" href="#">
-				<img class="page-header__logo-image" src="img/logotype-white-mobile.png" alt="Лого Пинк">
+		<div class="container">
+			<nav class="main-nav">
+				<div class="main-nav__top-menu">
+					<a class="page-header__logo" href="#">
+					<img class="page-header__logo-image" src="img/logotype-white-mobile.png" alt="Лого Пинк">
+					</a>
+					<button class="main-nav__toggle">Открыть меню</button>
+				</div>
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__list site-list">
+						<li class="site-list__item">
+							<a href="#">Главная</a>
+						</li>
+						<li class="site-list__item">
+							<a href="#">Фотографии</a>
+						</li>
+						<li class="site-list__item">
+							<a href="#">Конкурс</a>
+						</li>
+						<li class="site-list__item">
+							<a href="#">Html academy</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="header-intro">
+				<div class="header-intro__image">
+					<img src="logo.svg" alt="Pink-photo">
+				</div>
+				<a href="#" class="header-info__download">
+				Скачать приложение
 				</a>
-				<button class="main-nav__toggle">Открыть меню</button>
-			</div>
-			<div class="main-nav__wrapper">
-				<ul class="main-nav__list site-list">
-					<li class="site-list__item">
-						<a href="#">Главная</a>
-					</li>
-					<li class="site-list__item">
-						<a href="#">Фотографии</a>
-					</li>
-					<li class="site-list__item">
-						<a href="#">Конкурс</a>
-					</li>
-					<li class="site-list__item">
-						<a href="#">Html academy</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<section class="header-intro">
-			<div class="header-intro__image">
-				<img src="logo.svg" alt="Pink-photo">
-			</div>
-			<a href="#" class="header-info__download">
-			Скачать приложение
-			</a>
-			<div class="header-info__platforms">
-				<ul class="header-info__list mobile-platforms">
-					<li class="mobile-platforms__item">
-						<a href="#">
-							<img src="apple-logo.svg" alt="Apple-logo">
-						</a>
-					</li>
-					<li class="mobile-platforms__item">
-						<a href="#">
-							<img src="android-logo.svg" alt="Android-logo">
-						</a>
-					</li>
-					<li class="mobile-platforms__item">
-						<a href="#">
-							<img src="microsoft-logo.svg" alt="Microsoft-logo">
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="header-info__platforms-info">
-				<p>Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
-			</div>
-		</section>
+				<div class="header-info__platforms">
+					<ul class="header-info__list mobile-platforms">
+						<li class="mobile-platforms__item">
+							<a href="#">
+								<img src="apple-logo.svg" alt="Apple-logo">
+							</a>
+						</li>
+						<li class="mobile-platforms__item">
+							<a href="#">
+								<img src="android-logo.svg" alt="Android-logo">
+							</a>
+						</li>
+						<li class="mobile-platforms__item">
+							<a href="#">
+								<img src="microsoft-logo.svg" alt="Microsoft-logo">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header-info__platforms-info">
+					<p>Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+				</div>
+			</section>
+		</div>
 	</header>
 	<main class="page-main">
 		<div class="page-main__offer">
