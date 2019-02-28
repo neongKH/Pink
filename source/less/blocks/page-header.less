@@ -1,15 +1,18 @@
 .page-header {
-//	position: relative;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: rgba(29, 38, 49, 0.3);
 }
 .main-nav__top-menu {
 	display: flex;
 	justify-content: space-between;
-	background-color: rgba(29, 38, 49, 0.3);
 	height: 65px;
 	width: 100%;
 	padding-left: 20px;
 	padding-right: 20px;
-	position: absolute;
 }
 
 .page-header__logo {
@@ -21,7 +24,6 @@
 .page-header__logo-image {
 	width: 100%;
 	height: auto;
-	opacity: 1;
 }
 .site-list {
 	padding: 0;
@@ -49,17 +51,20 @@
 .header-intro {
 //	position: relative;
 }
-.header-intro__top-part {
+.header-intro__top {
+	&-part {
 	background-image: url("../img/header-back.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	height: 465px;
 	width: 100%;
-}
-.header-intro__top-image {
+	position: relative;
+	}
+	&-image {
 	position: absolute;
-	bottom: 135px;
+	bottom: 0;
 	width: 320px;
 	height: 315px;
+	}
 }
