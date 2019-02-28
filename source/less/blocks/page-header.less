@@ -1,16 +1,17 @@
 .page-header {
-	
+//	position: relative;
 }
 .main-nav__top-menu {
 	display: flex;
 	justify-content: space-between;
-	background-color: #1d2631;
-	opacity: 0.7;
+	background-color: rgba(29, 38, 49, 0.3);
 	height: 65px;
-	max-width: 320px;
+	width: 100%;
 	padding-left: 20px;
 	padding-right: 20px;
+	position: absolute;
 }
+
 .page-header__logo {
 	width: 75px;
 	height: 25px;
@@ -20,13 +21,14 @@
 .page-header__logo-image {
 	width: 100%;
 	height: auto;
+	opacity: 1;
 }
 .site-list {
 	padding: 0;
 	list-style: none;
 	display: none;
-}
-.site-list__item {
+	
+	&__item {
 	background-color: #283645;
 	text-transform: uppercase;
 	color: #fff;
@@ -37,12 +39,27 @@
 	vertical-align: middle;
 	border-bottom: 1px solid #000000;
 
-}
-.site-list__item a {
+	a {
 	color: #ffffff;
 	text-decoration: none;
 	vertical-align: middle;
+	}
 }
-.main-nav__background {
-//	background-image: url(/source/img/header-back.jpg);
+}
+.header-intro {
+//	position: relative;
+}
+.header-intro__top-part {
+	background-image: url("../img/header-back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 465px;
+	width: 100%;
+}
+.header-intro__top-image {
+	position: absolute;
+	bottom: 135px;
+	width: 320px;
+	height: 315px;
 }
