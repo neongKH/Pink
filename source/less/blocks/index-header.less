@@ -49,22 +49,24 @@
 }
 }
 .header-intro {
-	&__top-part {
-		
-	background-image: url("../img/header-back.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	height: 465px;
-	width: 100%;
-	position: relative;
+	&__top-part {	
+		background-image: url("../img/header-back.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		height: 465px;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
 	}
 	&__top-image {
 		
-	position: absolute;
-	bottom: 0;
-	width: 320px;
-	height: 315px;
+		position: absolute;
+		left: 50%;
+		bottom: -30px;
+		width: 320px;
+		height: 315px;
+		margin-left: -160px;
 	}
 	&__bottom-part {
 		
@@ -90,6 +92,7 @@
 		font-size: 18px;
 		line-height: 18px;
 		display: block;
+		margin: 0 auto;
 		margin-bottom: 30px;
 	}
 	&__platforms-info {

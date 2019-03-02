@@ -1,5 +1,13 @@
-@import "blocks/page-header";
+@darkblue: #283645;
+@import "blocks/index-header";
+@import "blocks/index-main";
+@import "blocks/index-footer";
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
@@ -28,9 +36,6 @@ input[type="radio"].visually-hidden {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}
-* {
-	box-sizing: border-box;
 }
 .container {
 	width: 100%;
