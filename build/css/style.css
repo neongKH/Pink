@@ -121,6 +121,8 @@
   line-height: 30px;
   margin-top: 40px;
   margin-bottom: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .advantages {
   background-color: #f2f2f2;
@@ -451,12 +453,12 @@ p.important {
 p.important span {
   color: #d22856;
 }
-.main-footer {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 .main-footer__logo {
   text-align: center;
+}
+.footer-social {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .footer-social__list {
   list-style: none;
