@@ -355,6 +355,7 @@ template {
 .header-intro__platforms {
   max-width: 210px;
   margin-left: 35px;
+  margin: 0 auto;
 }
 .header-intro__top-part {
   background-image: url("../img/header-back.jpg");
@@ -440,7 +441,6 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 20px;
   }
   .header-intro__top-part {
     height: 730px;
@@ -505,7 +505,7 @@ template {
 }
 .advantages ul {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   text-align: center;
   padding-left: 20px;
@@ -513,6 +513,7 @@ template {
   padding-bottom: 310px;
   padding-top: 50px;
   color: #283645;
+  max-width: 320px;
 }
 .advantages__title {
   color: #000;
@@ -603,6 +604,85 @@ template {
 .price-slider__toggles {
   padding-top: 20px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .page-main__offer-tablet {
+    display: none;
+  }
+  .advantages__phone-tablet {
+    display: none;
+  }
+  .advantages__item br {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .page-main__offer {
+    display: none;
+  }
+  .page-main__offer-tablet {
+    font-size: 40px;
+    font-weight: 300;
+    color: #283645;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+  }
+  .page-main__offer-tablet p {
+    line-height: 46px;
+    width: 100%;
+  }
+  .page-main__offer-tablet p:nth-child(1) {
+    margin: 0;
+  }
+  .page-main__offer-tablet p:nth-child(1) br {
+    display: none;
+  }
+  .advantages ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 75px;
+    padding-bottom: 20px;
+    max-width: 310px;
+    margin-left: 50vw;
+  }
+  .advantages__item {
+    text-align: left;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 15px;
+    font-weight: 400;
+  }
+  .advantages__item h3 {
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .advantages__phone {
+    display: none;
+  }
+  .advantages__phone-tablet {
+    width: 270px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-left: -360px;
+  }
+  .app-effect {
+    position: relative;
+  }
+  .app-effect__info {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 310px;
+  }
+  .app-effect__info h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 .main-footer {
   position: relative;
