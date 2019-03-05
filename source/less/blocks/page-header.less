@@ -1,0 +1,32 @@
+.page-header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.3);
+	&__logo {
+		width: 75px;
+		height: 25px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	&__logo-image {
+		width: 100%;
+		height: auto;
+	}
+}
+@media @mobile {
+	.page-header {
+		&__logo-tablet {
+			display: none;
+		}
+	}
+}
+@media @tablet {
+	.page-header {
+		&__logo {
+			display: none;
+		}
+	}
+}
