@@ -604,6 +604,42 @@ template {
   line-height: 30px;
   font-weight: bold;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .slider__item {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .slider__item-info {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  .slider__item-title {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .slider__item-title--about {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    color: #283645;
+  }
+}
 .price-slider {
   background-color: #f2f2f2;
   padding-top: 70px;
@@ -661,21 +697,99 @@ template {
   padding-top: 20px;
   text-align: center;
 }
+.price-slider__tablet {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 90px;
+  background-color: #f2f2f2;
+  padding-bottom: 70px;
+}
+.price-slider__tablet table {
+  width: 620px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.price-slider__tablet table th {
+  background-color: #283645;
+  color: #fff;
+  text-align: center;
+  height: 100px;
+  border: 2px solid #e5e5e5;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.price-slider__tablet table th span {
+  font-weight: 300;
+  font-size: 24px;
+}
+.price-slider__tablet table th:nth-child(1) {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.price-slider__tablet table td {
+  height: 45px;
+  width: 33.33%;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #283645;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+}
+.price-slider__tablet table td.tick {
+  background-repeat: no-repeat;
+  background-size: 31px 21px;
+  background-position: center;
+  background-image: url(../img/tick.png);
+}
+.price-slider__tablet table td.cross {
+  background-repeat: no-repeat;
+  background-size: 27px 26px;
+  background-position: center;
+  background-image: url(../img/cross.png);
+}
+@media (max-width: 767px) {
+  .price-slider__tablet {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .price-slider {
+    display: none;
+  }
+}
 .app-effect {
   position: relative;
+  padding-top: 60px;
+  padding-bottom: 100px;
 }
 .app-effect__info {
   font-size: 14px;
   line-height: 24px;
   max-width: 310px;
+  margin-left: 50vw;
+  padding-top: 30px;
+}
+.app-effect__info a {
+  color: #d22856;
+  text-decoration: underline;
 }
 .app-effect__info h2 {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 45px;
+  padding-bottom: 10px;
 }
 .app-effect__clock {
+  position: absolute;
+  left: 50%;
   width: 240px;
   height: 280px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-left: -350px;
 }
 @media (max-width: 767px) {
   .app-effect {
@@ -729,6 +843,11 @@ template {
   font-size: 24px;
   line-height: 24px;
   color: #d22856;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: none;
+  }
 }
 .main-nav__top-menu {
   display: -webkit-box;
@@ -1056,6 +1175,62 @@ template {
 .footer-copyright span {
   padding-bottom: 10px;
   padding-right: 15px;
+}
+.contacts-tablet {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 55px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  z-index: 10;
+}
+.contacts-tablet__question {
+  font-size: 46px;
+  line-height: 50px;
+  font-weight: 300;
+  padding-bottom: 55px;
+}
+.contacts-tablet span {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+.contacts-tablet a {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 26px;
+  color: #d22856;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  display: block;
+}
+.contacts-tablet__flex {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+.contacts-tablet__flex p {
+  width: 300px;
+}
+@media (max-width: 767px) {
+  .contacts-tablet {
+    display: none;
+  }
 }
 *,
 *::before,

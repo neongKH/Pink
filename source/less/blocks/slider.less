@@ -10,11 +10,46 @@
 		list-style: none;
 		padding: 0;
 		margin: 0;
+		
 	}
 	&__item-title {
 		color: #000;
 		font-size: 18px;
 		line-height: 30px;
 		font-weight: bold;
+		
+		
+	}
+	
+}
+@media @tablet {
+	.slider {
+		&__item {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
+			max-width: 620px;
+			margin: 0 auto;
+			&-info {
+				font-size: 18px;
+				line-height: 30px;
+				margin-bottom: 40px;
+			}
+			&-title {
+				order: 2;
+				margin: 0;
+				margin-bottom: 10px;
+				font-size: 22px;
+				line-height: 30px;
+				&--about {
+					order: 3;
+					color: @darkblue;
+				}
+			}
+			
+		}
 	}
 }
