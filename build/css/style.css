@@ -823,6 +823,7 @@ template {
   z-index: -1;
   overflow: hidden;
   margin-top: -200px;
+  position: relative;
 }
 .main-footer__map-tablet img {
   display: block;
