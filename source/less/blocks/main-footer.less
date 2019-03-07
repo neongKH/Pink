@@ -3,7 +3,7 @@
 	&__logo {
 		text-align: center;
 	}
-	&__image {
+	&__map {
 		overflow: hidden;
 		position: absolute;
 		bottom: -220px;
@@ -16,7 +16,43 @@
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			
+		}
+		&-tablet {
+			width: 100%;
+			height: 690px;
+			overflow: hidden;
+			position: absolute;
+			top: 250px;
+			z-index: -1;
+			overflow: hidden;
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+@media @mobile {
+	.main-footer {
+		
+		&__map-tablet {
+			display: none;
+		}
+	}
+}
+@media @tablet {
+	.main-footer {
+		&__map {
+			display: none;
+		}
+	}
+}
+@media @desktop {
+	.main-footer {
+		&__map {
+			display: none;
 		}
 	}
 }

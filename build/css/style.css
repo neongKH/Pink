@@ -802,7 +802,7 @@ template {
 .main-footer__logo {
   text-align: center;
 }
-.main-footer__image {
+.main-footer__map {
   position: absolute;
   bottom: -220px;
   z-index: -1;
@@ -810,12 +810,42 @@ template {
   overflow: hidden;
   width: 100%;
 }
-.main-footer__image img {
+.main-footer__map img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.main-footer__map-tablet {
+  width: 100%;
+  height: 690px;
+  position: absolute;
+  top: 250px;
+  z-index: -1;
+  overflow: hidden;
+}
+.main-footer__map-tablet img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .main-footer__map-tablet {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main-footer__map {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .main-footer__map {
+    display: none;
+  }
 }
 .contacts {
   text-align: center;
@@ -1231,6 +1261,50 @@ template {
   .contacts-tablet {
     display: none;
   }
+}
+.footer-bottom {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 500px;
+  padding-bottom: 30px;
+}
+.footer-bottom__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.footer-bottom__item {
+  border: 3px solid #eeeeee;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+.footer-bottom__copyright span {
+  margin-right: 10px;
 }
 *,
 *::before,
