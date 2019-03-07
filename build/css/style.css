@@ -822,6 +822,7 @@ template {
   height: 690px;
   z-index: -1;
   overflow: hidden;
+  margin-top: -200px;
 }
 .main-footer__map-tablet img {
   display: block;
@@ -829,7 +830,6 @@ template {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: -200px;
 }
 @media (max-width: 767px) {
   .main-footer__map-tablet {
