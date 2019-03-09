@@ -15,10 +15,17 @@
 		width: 100%;
 		height: auto;
 	}
+	&__logo-desktop {
+		width: 147px;
+		height: 40px;
+	}
 }
 @media @mobile {
 	.page-header {
 		&__logo-tablet {
+			display: none;
+		}
+		&__logo-desktop {
 			display: none;
 		}
 	}
@@ -26,6 +33,19 @@
 @media @tablet {
 	.page-header {
 		&__logo {
+			display: none;
+		}
+		&__logo-desktop {
+			display: none;
+		}
+	}
+}
+@media @desktop {
+	.page-header {
+		&__logo {
+			display: none;
+		}
+		&__logo-tablet {
 			display: none;
 		}
 	}
