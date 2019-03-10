@@ -740,14 +740,17 @@ template {
     display: flex;
     padding: 0;
     margin: 0 auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .advantages__item {
-    max-width: 320px;
+    max-width: 190px;
   }
   .advantages__item h3 {
     font-size: 26px;
     font-weight: bold;
     line-height: 30px;
+    margin-bottom: 20px;
   }
   .advantages__phone {
     display: none;
