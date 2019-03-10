@@ -23,8 +23,21 @@
 		}
 	}
 }
+@media @tablet {
+	.site-list-desktop {
+		display: none;
+	}
+}@media @mobile {
+	.site-list-desktop {
+		display: none;
+	}
+}
 @media @desktop {
 	.site-list {
+		display: none;
+
+	}
+	.site-list-desktop {
 		display: flex;
 		justify-content: space-between;
 		width: 800px;
@@ -32,6 +45,8 @@
 		margin: 0;
 		padding: 0;
 		padding-top: 10px;
+		padding-left: 100px;
+		list-style: none;
 		&__item {
 			background-color: transparent;
 			font-size: 18px;
@@ -42,6 +57,9 @@
 			padding: 0;
 			text-align: inherit;
 			margin: 0;
+			a {
+				color: #fff;
+			}
 		}
 	}
 }
