@@ -32,11 +32,27 @@
 			}
 		}
 	}
+	&__map-desktop {
+		width: 100%;
+		height: 940px;
+		z-index: -1;
+		overflow: hidden;
+		margin-top: -200px;
+		position: relative;
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+	}
 }
 @media @mobile {
 	.main-footer {
-		
 		&__map-tablet {
+			display: none;
+		}
+		&__map-desktop {
 			display: none;
 		}
 	}
@@ -46,6 +62,9 @@
 		&__map {
 			display: none;
 		}
+		&__map-desktop {
+			display: none;
+		}
 	}
 }
 @media @desktop {
@@ -53,5 +72,9 @@
 		&__map {
 			display: none;
 		}
+		&__map-tablet {
+			display: none;
+		}
 	}
+	
 }
