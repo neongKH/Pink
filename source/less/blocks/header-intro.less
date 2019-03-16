@@ -1,4 +1,4 @@
-.header-intro { 
+.header-intro {  
 	&__platforms {
 		max-width: 210px;
 		margin-left: 35px;
@@ -56,7 +56,22 @@
 		text-align: center;
 		color: #a1a3a6;
 	}
+	&--inner-photo  {
+		background-image: url("../img/header-back.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 240px;
+		text-align: center;
+		color: #fff;
+		font-size: 24px;
+		line-height: 26px;
+		font-weight: 300;
+		p {
+			padding-top: 100px;
+		}
+	} 
 }
+
 @media @mobile {
 	.header-intro {
 

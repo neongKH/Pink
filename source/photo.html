@@ -14,12 +14,34 @@
 	<header class="page-header">
 		<div class="container">
 			<nav class="main-nav">
-					<div class="main-nav__top-menu">
-						<a class="page-header__logo" href="#">
-						<img class="page-header__logo-image" src="img/logotype-white-mobile.png" alt="Лого Пинк">
-						</a>
-						<button class="main-nav__toggle visually-hidden">Открыть меню</button>
-					</div>
+				<div class="main-nav__top-menu">
+					<a class="page-header__logo" href="#">
+					<img class="page-header__logo-image" src="img/logotype-white-mobile.png" alt="Лого Пинк">
+					</a>
+					<a class="page-header__logo-tablet" href="#">
+					<img src="img/logotype-white-tablet.png" alt="Logo Pink">
+					</a>
+					<a class="page-header__logo-desktop" href="#">
+					<img src="img/logotype-white-desktop.png" alt="Logo Pink">
+					</a>
+					<button class="main-nav__toggle">
+					<img src="img/menu-burger.png" alt="Burger">
+					</button>
+					<ul class="main-nav__list site-list-desktop">
+						<li class="site-list-desktop__item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="site-list-desktop__item">
+							<a href="photo.html">Фотографии</a>
+						</li>
+						<li class="site-list-desktop__item">
+							<a href="form.html">Конкурс</a>
+						</li>
+						<li class="site-list-desktop__item">
+							<a href="//htmlacademy.ru">HTML Academy</a>
+						</li>
+					</ul>
+				</div>
 				<div class="main-nav__wrapper">
 					<ul class="main-nav__list site-list">
 						<li class="site-list__item">
@@ -39,9 +61,11 @@
 			</nav>
 		</div>
 	</header>
-	<div class="page-header__intro">
-		<p>Фотографии<br> пользователей</p>
-	</div>
+	<section class="header-intro">
+		<div class="header-intro--inner-photo">
+			<p>Фотографии<br> пользователей</p>
+		</div>
+	</section>
 	<main class="page-main">
 		<div class="posts">
 			<div class="posts__title">

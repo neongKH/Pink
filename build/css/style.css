@@ -461,6 +461,20 @@ template {
   text-align: center;
   color: #a1a3a6;
 }
+.header-intro--inner-photo {
+  background-image: url("../img/header-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 240px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 300;
+}
+.header-intro--inner-photo p {
+  padding-top: 100px;
+}
 @media (max-width: 767px) {
   .header-intro__top-image-tablet {
     display: none;
