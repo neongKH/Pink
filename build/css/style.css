@@ -1330,7 +1330,7 @@ template {
   }
   .posts__post-info {
     padding-left: 30px;
-    min-height: calc(100% - 280px);
+    min-height: calc(100% - 300px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1394,6 +1394,9 @@ template {
   }
   .posts__post-photo--mobile {
     display: none;
+  }
+  .posts__post-photo--tablet img {
+    height: 300px;
   }
 }
 .photo-redactor {

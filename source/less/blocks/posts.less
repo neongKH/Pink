@@ -58,7 +58,7 @@
 		}
 		&__post-info {
 			padding-left: 30px;
-			min-height: calc(100% - 280px);
+			min-height: ~"calc(100% - 300px)";
 			display: flex;
 			flex-direction: column;
 		}
@@ -76,6 +76,7 @@
 			margin-bottom: 50px;
 			margin: 0 auto;
 			margin-bottom: 50px;
+			
 		}
 		&__title {
 			max-width: 440px;
@@ -114,6 +115,13 @@
 		}
 		&__post-photo--mobile {
 			display: none;
+			
+		}
+		&__post-photo--tablet {
+			img {
+				height: 300px;
+			}
+			
 		}
 	}
 	
