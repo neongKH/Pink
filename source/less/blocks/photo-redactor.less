@@ -1,10 +1,10 @@
  
 .photo-redactor {
 	background-color: #f2f2f2;
-	padding-left: 20px;
-	padding-right: 20px;
 	padding-top: 20px;
 	margin-bottom: 40px;
+	width: 280px;
+	margin: 0 auto;
 	&__filters {
 		list-style: none;
 		padding: 0;
@@ -15,7 +15,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 200px;
+		max-width: 200px;
 		margin-left: 40px;
 		margin-top: 30px;
 	}
@@ -25,31 +25,52 @@
 		padding-bottom: 40px;
 	}
 	&__button {
-			border: 3px solid @pink;
-			border-radius: 30px;
-			color: @pink;
-			font-weight: bold;
-			font-size: 18px;
-			line-height: 18px;
-			text-align: center;
-			width: 100%;
-			height: 55px;
-			display: block;
-			padding-top: 15px;
-			margin-bottom: 10px;
-		}
-	&__button-disabled {
-			border: 3px solid rgba(40, 54, 69, 0.1);
-			border-radius: 30px;
-			color: rgba(40, 54, 69, 0.1);
-			font-weight: bold;
-			font-size: 18px;
-			line-height: 18px;
-			text-align: center;
-			width: 100%;
-			height: 55px;
-			display: block;
-			padding-top: 15px;
-		
+		border: 3px solid @pink;
+		border-radius: 30px;
+		color: @pink;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 18px;
+		text-align: center;
+		width: 100%;
+		height: 55px;
+		display: block;
+		padding-top: 15px;
+		margin-bottom: 10px;
 	}
+	&__button-disabled {
+		border: 3px solid rgba(40, 54, 69, 0.1);
+		border-radius: 30px;
+		color: rgba(40, 54, 69, 0.1);
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 18px;
+		text-align: center;
+		width: 100%;
+		height: 55px;
+		display: block;
+		padding-top: 15px;
+	}
+	&__toggle {
+		width: 240px;
+		height: 2px;
+		margin: 0 auto;
+		margin-top: 40px;
+		background-color: #000;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			top: -8px;
+			left: 195px;
+			width: 18px;
+			height: 18px;
+			border: 3px solid #d22957;
+			border-radius: 50%;
+			background-color: #f2f2f2;
+		}
+	}
+}
+.photo-redactor-wrapper {
+	background-color: #f2f2f2;
 }
