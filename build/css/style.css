@@ -1272,8 +1272,8 @@ template {
   padding-bottom: 30px;
 }
 .posts__post {
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 280px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 .posts__post-info {
@@ -1287,7 +1287,11 @@ template {
 .posts__post-info span.like {
   color: #d22856;
   text-transform: uppercase;
-  padding-left: 20px;
+}
+.posts__post-info span.like img {
+  width: 13px;
+  height: 12px;
+  margin-right: 15px;
 }
 .posts__title-end {
   text-align: center;
@@ -1300,6 +1304,7 @@ template {
 }
 .photo-redactor {
   background-color: #f2f2f2;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
@@ -1522,8 +1527,9 @@ template {
   color: #d22856;
 }
 .footer-social {
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 180px;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 .footer-social__list {
   list-style: none;
@@ -1535,7 +1541,6 @@ template {
           justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin: 50px;
   margin-top: 30px;
 }
 .footer-social__item {
