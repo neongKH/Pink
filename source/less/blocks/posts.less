@@ -52,12 +52,14 @@
 	.posts {
 		&__post {
 			width: 300px;
-			margin: 0 auto;
 			margin-bottom: 20px;
+			margin: 0;
+			max-width: none;
 		}
 		&__post-info {
 			padding-left: 30px;
 			min-height: calc(100% - 280px);
+			display: flex;
 			flex-direction: column;
 		}
 		&__post-flex {
