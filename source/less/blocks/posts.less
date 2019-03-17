@@ -70,6 +70,8 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
+			padding-right: 20px;
+			padding-left: 20px;
 		}
 		&__post-tablet {
 			max-width: 620px;
@@ -109,7 +111,7 @@
 			img {
 				width: 13px;
 				height: 12px;
-				margin-left: 90px;
+				margin-left: 140px;
 				margin-bottom: 5px;
 			}
 		}
@@ -118,8 +120,11 @@
 			
 		}
 		&__post-photo--tablet {
+			height: 300px;
 			img {
-				height: 300px;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
 			}
 			
 		}

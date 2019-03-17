@@ -1351,6 +1351,8 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .posts__post-tablet {
     max-width: 620px;
@@ -1389,14 +1391,20 @@ template {
   .posts span.like-tablet img {
     width: 13px;
     height: 12px;
-    margin-left: 90px;
+    margin-left: 140px;
     margin-bottom: 5px;
   }
   .posts__post-photo--mobile {
     display: none;
   }
-  .posts__post-photo--tablet img {
+  .posts__post-photo--tablet {
     height: 300px;
+  }
+  .posts__post-photo--tablet img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .photo-redactor {
