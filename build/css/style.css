@@ -1323,9 +1323,9 @@ template {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .posts__post {
-    width: 40%;
-    margin-bottom: 20px;
     margin: 0;
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
     max-width: none;
   }
   .posts__post-info {
@@ -1348,6 +1348,9 @@ template {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .posts__post-tablet {
     max-width: 620px;
