@@ -52,10 +52,13 @@
 	.posts {
 		&__post {
 			width: 300px;
-			height: 455px;
+			margin: 0 auto;
+			margin-bottom: 20px;
 		}
 		&__post-info {
 			padding-left: 30px;
+			min-height: calc(100% - 280px);
+			flex-direction: column;
 		}
 		&__post-flex {
 			display: -webkit-flex;
@@ -98,10 +101,11 @@
 		span.like-tablet {
 			color: @pink;
 			text-transform: uppercase;
+			margin-top: auto;
 			img {
 				width: 13px;
 				height: 12px;
-				margin-left: 100px;
+				margin-left: 90px;
 				margin-bottom: 5px;
 			}
 		}
