@@ -1391,7 +1391,7 @@ template {
   .posts span.like-tablet img {
     width: 13px;
     height: 12px;
-    margin-left: 140px;
+    margin-left: 90px;
     margin-bottom: 5px;
   }
   .posts__post-photo--mobile {
@@ -1401,10 +1401,18 @@ template {
     height: 300px;
   }
   .posts__post-photo--tablet img {
-    height: 100%;
+    height: 300px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .posts__title-end {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .posts-wrapper {
+    width: 620px;
+    margin: 0 auto;
   }
 }
 .photo-redactor {
