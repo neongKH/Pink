@@ -70,7 +70,35 @@
 			background-color: #f2f2f2;
 		}
 	}
+	&__filters-tablet {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	&__filter-tablet {
+		margin-bottom: 50px;
+		img {
+			width: 24px;
+			height: 22px;
+		}
+	}
 }
 .photo-redactor-wrapper {
 	background-color: #f2f2f2;
+}
+@media @tablet {
+	.photo-redactor {
+		width: 660px;
+		margin: 0;
+		display: flex;
+		&__filters {
+			display: none;
+		}
+	}
 }

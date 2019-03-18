@@ -1351,8 +1351,6 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-right: 20px;
-    padding-left: 20px;
   }
   .posts__post-tablet {
     max-width: 620px;
@@ -1492,8 +1490,42 @@ template {
   border-radius: 50%;
   background-color: #f2f2f2;
 }
+.photo-redactor__filters-tablet {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.photo-redactor__filter-tablet {
+  margin-bottom: 50px;
+}
+.photo-redactor__filter-tablet img {
+  width: 24px;
+  height: 22px;
+}
 .photo-redactor-wrapper {
   background-color: #f2f2f2;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .photo-redactor {
+    width: 660px;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .photo-redactor__filters {
+    display: none;
+  }
 }
 .information {
   padding-left: 20px;
