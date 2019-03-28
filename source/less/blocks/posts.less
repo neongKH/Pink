@@ -1,4 +1,4 @@
-.posts { 
+.posts {  
 	&__title {
 		text-align: center;
 		line-height: 30px;
@@ -46,6 +46,22 @@
 @media @mobile {
 	.like-tablet {
 		display: none;
+	}
+	.like-tablet-panorama {
+		display: none;
+	}
+	.posts {
+		&__panorama-tablet {
+			display: none;
+		}
+		&__post-tablet {
+			max-width: 280px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		&__post-photo--tablet {
+			display: none;
+		}
 	}
 }
 @media @tablet {

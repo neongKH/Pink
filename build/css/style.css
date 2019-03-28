@@ -1127,7 +1127,6 @@ template {
 }
 .main-footer {
   position: relative;
-  padding-top: 40px;
 }
 .main-footer__logo {
   text-align: center;
@@ -1177,6 +1176,9 @@ template {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.footer-inner {
+  padding-top: 40px;
+}
 @media (max-width: 767px) {
   .main-footer__map-tablet {
     display: none;
@@ -1192,12 +1194,18 @@ template {
   .main-footer__map-desktop {
     display: none;
   }
+  .footer-inner {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .main-footer__map {
     display: none;
   }
   .main-footer__map-tablet {
+    display: none;
+  }
+  .footer-inner {
     display: none;
   }
 }
@@ -1318,6 +1326,20 @@ template {
 }
 @media (max-width: 767px) {
   .like-tablet {
+    display: none;
+  }
+  .like-tablet-panorama {
+    display: none;
+  }
+  .posts__panorama-tablet {
+    display: none;
+  }
+  .posts__post-tablet {
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .posts__post-photo--tablet {
     display: none;
   }
 }
@@ -1911,6 +1933,11 @@ template {
 }
 @media (max-width: 767px) {
   .footer-bottom {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-bottom-logo-desktop {
     display: none;
   }
 }

@@ -1,6 +1,5 @@
 .main-footer { 
 	position: relative;
-	padding-top: 40px;
 	&__logo {
 		text-align: center;
 	}
@@ -48,6 +47,9 @@
 			}
 	}
 }
+.footer-inner {
+	padding-top: 40px;
+}
 @media @mobile {
 	.main-footer {
 		&__map-tablet {
@@ -67,6 +69,9 @@
 			display: none;
 		} 
 	}
+	.footer-inner {
+		display: none;
+	}
 }
 @media @desktop {
 	.main-footer {
@@ -77,5 +82,7 @@
 			display: none;
 		}
 	}
-	
+	.footer-inner {
+		display: none;
+	}
 }
