@@ -2,11 +2,22 @@
 	position: relative;
 	padding-top: 60px;
 	padding-bottom: 100px;
+	
+	&__main-row {
+		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
 	&__info {
 		font-size: 14px;
 		line-height: 24px;
 		max-width: 310px;
-		margin-left: 50vw;
 		padding-top: 30px;
 		a {
 			color: @pink;
@@ -19,13 +30,10 @@
 		}
 	}
 	&__clock {
-		position: absolute;
-		left: 50%;
+		margin-right: 70px;
 		width: 240px;
 		height: 280px;
-		margin: 0 auto;
-		overflow: hidden;
-		margin-left: -350px;
+		flex-shrink: 0;
 	}
 }
 @media @mobile {
@@ -42,12 +50,14 @@
 		
 		&__info {
 			margin: 0;
-			max-width: 510px;
-			margin-left: 490px;
-			padding-top: 80px;
+			max-width: 580px;
+		}
+		&__main-row {
+			width: 950px;
+			margin: 0 auto;
 		}
 		&__clock {
-			margin-left: -430px;
+			
 		}
 	}
 }
