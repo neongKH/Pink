@@ -1,5 +1,5 @@
  
-.photo-redactor {
+.photo-redactor { 
 	background-color: #f2f2f2;
 	padding-top: 20px;
 	margin-bottom: 40px;
@@ -89,11 +89,6 @@
 			background-color: #f2f2f2;
 		}
 	}
-	&__toggle-tablet:nth-child(2) {
-		&::before {
-			left: 30px;
-		}
-	}
 	&__filters-tablet {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -153,7 +148,125 @@
 		}
 		&__buttons {
 			padding: 0;
-			padding-top: 80px;
+			padding-top: 100px;
+		}
+		&__button {
+			margin-bottom: 20px;
+		}
+		&__image {
+			img {
+				height: 400px;
+			}
+		}
+		&__filter-tablet {
+			&:nth-child(2) {
+				.photo-redactor__toggle-tablet {
+					&::before {
+						left: 30px;
+					}
+				}
+			}
+			&:nth-child(1) {
+				.photo-redactor__toggle-tablet {
+					&::before {
+						left: 150px;
+					}
+				}
+			}
+			&:nth-child(3) {
+				.photo-redactor__toggle-tablet {
+					&::before {
+						left: 100px;
+					}
+				}
+			}
+		}
+	}
+}
+@media @desktop {
+	.photo-redactor {
+		width: 940px;
+		justify-content: center;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		padding-top: 60px;
+    	padding-bottom: 60px;
+		&__filter-tablet {
+			&::before {
+				width: 410px;
+			}
+			&:nth-child(1) {	
+				.photo-redactor__toggle-tablet {
+					&::before {
+						left: 70px;
+					}
+				}
+				img {
+					height: 44px;
+				}
+			}
+			&:nth-child(2) {	
+				.photo-redactor__toggle-tablet {
+					&::before {
+						left: 247px;
+					}
+				}
+				img {
+					height: 43px;
+				}
+			}
+			&:nth-child(3) {	
+				.photo-redactor__toggle-tablet {
+					&::before {
+						left: 160px;
+					}
+				}
+				img {
+					height: 32px;
+				}
+			}
+		}
+		&__button {
+			width: 183px;
+			margin-right: 50px;
+		}
+		&__button-disabled {
+			width: 183px;
+		}
+		&__toggle-tablet {
+			width: 290px;
+			margin-left: 93px;
+		}
+		&__image {
+			img {
+			height: 400px;
+			}
+		}
+		&__tools {
+			margin-left: 90px;
+			width: 410px;
+		}
+		&__filters {
+			display: none;
+		}
+		&__toggle {
+			display: none;
+		}
+		&__buttons {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			padding-top: 140px;
+			padding-bottom: 0;
+		}
+		&-wrapper {
+			width: 940px;
+			margin: 0 auto;
 		}
 	}
 }
