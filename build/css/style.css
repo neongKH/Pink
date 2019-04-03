@@ -469,7 +469,7 @@ template {
   text-align: center;
   color: #fff;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 30px;
   font-weight: 300;
 }
 .header-intro--inner-photo p {
@@ -1818,22 +1818,23 @@ template {
   color: #283645;
   padding-top: 30px;
 }
-.information label {
+.information .input-wrapper {
   color: #d22856;
   font-size: 14px;
   line-height: 30px;
+  width: 100%;
 }
-.information label input::-webkit-input-placeholder {
+.information .input-wrapper input::-webkit-input-placeholder {
   color: #283645;
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
 }
-.information label span {
+.information .input-wrapper span {
   padding-left: 10px;
   text-transform: uppercase;
 }
-.information label input {
+.information .input-wrapper input {
   border: 2px solid #eeeeee;
   padding: 15px 15px;
   font-size: 18px;
@@ -1860,9 +1861,7 @@ template {
 .achievements label {
   font-size: 18px;
   line-height: 30px;
-  padding-left: 60px;
   color: #283645;
-  padding-bottom: 20px;
   display: block;
 }
 .contacts-form {
@@ -1873,6 +1872,7 @@ template {
   color: #d22856;
   font-size: 14px;
   line-height: 30px;
+  width: 100%;
 }
 .contacts-form label input::-webkit-input-placeholder {
   color: #283645;
