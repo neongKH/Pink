@@ -64,91 +64,141 @@
 		<p>Конкурс на самое<br> безбашенное<br> путешествие с Пинк</p>
 	</section>
 	<main class="page-main">
-		<div class="information">
-			<p class="information__title">
-				Поделитесь своей историей и получите<br> шанс выиграть ценный приз - 1000<br> миль на вашу бонусную карту!
-			</p>
-			<div class="input-wrapper">
-				<label for="surname"><span>Фамилия:</span></label>
-				<input type="text" id="surname" placeholder="Укажите фамилию *">
+	<div class="container">
+		<form method="post" action="https://echo.htmlacademy.ru">
+			<div class="information">
+				<p class="information__title">
+					Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!<span class="tablet">Пожалуйста, заполните форму ниже:</span>
+				</p>
+				<div class="input-wrapper">
+					<label for="surname"><span>Фамилия:</span></label>
+					<input type="text" id="surname" placeholder="Укажите фамилию *">
+				</div>
+				<div class="input-wrapper">
+					<label for="name"><span>Имя:</span></label>
+					<input type="text" id="name" placeholder="Введите ваше имя *">
+				</div>
+				<div class="input-wrapper">
+					<label for="patronymic"><span>Отчество:</span></label>
+					<input type="text" id="patronymic" placeholder="Ну и отчество тоже">
+				</div>
 			</div>
-			<div class="input-wrapper">
-				<label for="name"><span>Имя:</span></label>
-				<input type="text" id="name" placeholder="Введите ваше имя *">
+			<div class="mobile-app-tablet">
+				<fieldset>
+					<legend>С каким приложением путешествовали?</legend>
+					<ul class="mobile-app-tablet__list">
+						<li>
+							<div class="input-wrapper">
+								<input class="visually-hidden" type="radio" id="ios" name="platform" checked>
+								<label for="ios">Pink для iOS</label>
+							</div>
+						</li>
+						<li>
+							<div class="input-wrapper">
+								<input class="visually-hidden" type="radio" id="android" name="platform">
+								<label for="android">Pink на Android</label>
+							</div>
+						</li>
+						<li>
+							<div class="input-wrapper">
+								<input class="visually-hidden" type="radio" id="windows" name="platform">
+								<label for="windows">Windows Phone</label>
+							</div>
+						</li>
+					</ul>
+				</fieldset>
+			</div>		
+			<div class="achievements">
+				<p class="achievements__title">
+					Ваши безбашенные<br> достижения в путешествии
+				</p>
+				<ul class="achievements__list">
+					<li>
+						<div class="input-wrapper">
+							<input class="visually-hidden" type="checkbox" id="selfie" checked>
+							<label for="selfie">Сделал селфи с акулой</label>
+						</div>
+					</li>
+					<li>
+						<div class="input-wrapper">
+							<input class="visually-hidden" type="checkbox" id="beach" checked>
+							<label for="beach">Обгорел на пляже</label>
+						</div>
+					</li>
+					<li>
+						<div class="input-wrapper">
+							<input class="visually-hidden" type="checkbox" id="see">
+							<label for="see">Видел Чака Норриса</label>
+						</div>
+					</li>
+					<li>
+						<div class="input-wrapper">
+						<input class="visually-hidden" type="checkbox" id="buy">
+							<label for="buy">Накупил сувениров</label>
+						</div>
+					</li>
+					<li>
+						<div class="input-wrapper">
+							<input class="visually-hidden" type="checkbox" id="tower" checked>
+							<label for="tower">Удержал башню</label>
+						</div>
+					</li>
+					<li>
+						<div class="input-wrapper">
+							<input class="visually-hidden" type="checkbox" id="hotel">
+							<label for="hotel">Разгромил отель</label>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<div class="input-wrapper">
-				<label for="patronymic"><span>Отчество:</span></label>
-				<input type="text" id="patronymic" placeholder="Ну и отчество тоже">
+			<div class="contacts-form">
+				<label for="number">
+					<span>Номер телефона</span>
+					<br><input type="text" id="number" placeholder="Номер, пожалуйста">
+				</label>
+				<br><label for="email">
+					<span>Адрес почты</span>
+					<br><input type="text" id="email" placeholder="Введите почту *">
+				</label>
 			</div>
-		</div>
-		<div class="achievements">
-			<p class="achievements__title">
-				Ваши безбашенные<br> достижения в путешествии
-			</p>
-			<div class="input-wrapper">
-				<label for="selfie">Сделал селфи с акулой</label>
-				<input class="visually-hidden" type="checkbox" id="selfie" checked>
+			<div class="mobile-app">
+				<p class="mobile-app__title">
+					С каким приложением<br> путешествовали?
+				</p>
+				<ul class="mobile-app__list">
+					<li>
+						<div class="input-wrapper">
+							<input class="visually-hidden" type="radio" id="ios" name="platform" checked>
+							<label for="ios">Pink для iOS</label>
+						</div>
+					</li>
+					<li>
+						<div class="input-wrapper">
+							<input class="visually-hidden" type="radio" id="android" name="platform">
+							<label for="android">Pink на Android</label>
+						</div>
+					</li>
+					<li>
+						<div class="input-wrapper">
+							<input class="visually-hidden" type="radio" id="windows" name="platform">
+							<label for="windows">Windows Phone</label>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<div class="input-wrapper">
-				<label for="beach">Обгорел на пляже</label>
-				<input class="visually-hidden" type="checkbox" id="beach" checked>
+			<div class="emotion-description">
+				<p class="emotion-description__title">
+					Опишите свои эмоции
+				</p>
+				<textarea name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+				<p class="emotion-description__button">
+					<a href="#">Отправить форму</a>
+				</p>
+				<p class="emotion-description__important">
+					<span>*</span> &mdash; Обязательные поля
+				</p>
 			</div>
-			<div class="input-wrapper">
-				<label for="see">Видел Чака Норриса</label>
-				<input class="visually-hidden" type="checkbox" id="see">
-			</div>
-			<div class="input-wrapper">
-				<label for="buy">Накупил сувениров</label>
-				<input class="visually-hidden" type="checkbox" id="buy">
-			</div>
-			<div class="input-wrapper">
-				<label for="tower">Удержал башню</label>
-				<input class="visually-hidden" type="checkbox" id="tower" checked>
-			</div>
-			<div class="input-wrapper">
-				<label for="hotel">Разгромил отель</label>
-				<input class="visually-hidden" type="checkbox" id="hotel">
-			</div>
-		</div>
-		<div class="contacts-form">
-			<label for="number">
-				<span>Номер телефона</span>
-				<br><input type="text" id="number" placeholder="Номер, пожалуйста">
-			</label>
-			<br><label for="email">
-				<span>Адрес почты</span>
-				<br><input type="text" id="email" placeholder="Введите почту *">
-			</label>
-		</div>
-		<div class="mobile-app">
-			<p class="mobile-app__title">
-				С каким приложением<br> путешествовали?
-			</p>
-			<label for="ios">
-				<input class="visually-hidden" type="radio" id="ios">
-				Pink для iOS
-			</label><br>
-			<label for="android">
-				<input class="visually-hidden" type="radio" id="android" >
-				Pink на Android
-			</label><br>
-			<label for="windows">	
-				<input class="visually-hidden" type="radio" id="windows">
-				Windows Phone
-			</label>
-		</div>
-		<div class="emotion-description">
-			<p class="emotion-description__title">
-				Опишите свои эмоции
-			</p>
-			<textarea name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-			<p class="emotion-description__button">
-				<a href="#">Отправить форму</a>
-			</p>
-			<p class="emotion-description__important">
-				<span>*</span> &mdash; Обязательные поля
-			</p>
-		</div>
+		</form>
 	</main>
 	<footer class="main-footer">
 		<div class="main-footer__logo">

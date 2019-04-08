@@ -1,14 +1,7 @@
-.mobile-app { 
-	background-color: #f2f2f2;
+.mobile-app-tablet {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 40px;
-	&__title {
-		text-align: center;
-		color: @pink;
-		padding-top: 30px;
-		text-transform: uppercase;
-	}
 	label {
 		font-size: 18px;
 		line-height: 30px;
@@ -20,6 +13,9 @@
 	&__list {
 		list-style: none;
 		padding: 0;
+		padding-left: 60px;
+		padding-top: 35px;
+		padding-bottom: 35px;
 		input[type="radio"] + label::before {
 			content: "";
 			position: absolute;
@@ -58,14 +54,4 @@
 			text-transform: uppercase;
 		}
 	}
-}
-@media @mobile {
-	.mobile-app {
-		fieldset {
-			display: none;
-		}
-	}
-}
-@media @tablet {
-	
 }
