@@ -16,6 +16,12 @@
 		padding-left: 60px;
 		padding-top: 35px;
 		padding-bottom: 35px;
+		li {
+			margin-bottom: 30px;
+		}
+		li:last-child {
+			margin-bottom: 0;
+		}
 		input[type="radio"] + label::before {
 			content: "";
 			position: absolute;
@@ -56,5 +62,10 @@
 			color: @pink;
 			text-transform: uppercase;
 		}
+	}
+}
+@media @mobile {
+	.mobile-app-tablet {
+		display: none;
 	}
 }

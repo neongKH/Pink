@@ -1933,23 +1933,23 @@ template {
   padding-bottom: 40px;
   padding-top: 40px;
 }
-.contacts-form label {
+.contacts-form .input-wrapper {
   color: #d22856;
   font-size: 14px;
   line-height: 30px;
   width: 100%;
 }
-.contacts-form label input::-webkit-input-placeholder {
+.contacts-form .input-wrapper input::-webkit-input-placeholder {
   color: #283645;
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
 }
-.contacts-form label span {
+.contacts-form .input-wrapper label {
   padding-left: 10px;
   text-transform: uppercase;
 }
-.contacts-form label input {
+.contacts-form .input-wrapper input {
   border: 2px solid #eeeeee;
   padding: 15px 15px;
   font-size: 18px;
@@ -2021,6 +2021,11 @@ template {
 }
 @media (max-width: 767px) {
   .mobile-app fieldset {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .mobile-app {
     display: none;
   }
 }
@@ -2291,6 +2296,12 @@ template {
   padding-top: 35px;
   padding-bottom: 35px;
 }
+.mobile-app-tablet__list li {
+  margin-bottom: 30px;
+}
+.mobile-app-tablet__list li:last-child {
+  margin-bottom: 0;
+}
 .mobile-app-tablet__list input[type="radio"] + label::before {
   content: "";
   position: absolute;
@@ -2329,6 +2340,25 @@ template {
   line-height: 30px;
   color: #d22856;
   text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .mobile-app-tablet {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .flex-container-tablet {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 *,
 *::before,
