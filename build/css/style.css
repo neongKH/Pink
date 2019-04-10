@@ -2319,8 +2319,10 @@ template {
 .mobile-app-tablet fieldset legend {
   position: absolute;
   text-align: center;
+  margin: 0 auto;
   top: -15px;
   left: 150px;
+  right: 150px;
   background-color: #fff;
   max-width: 360px;
   font-size: 14px;
