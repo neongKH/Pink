@@ -17,16 +17,16 @@
 			<nav class="main-nav">
 					<div class="main-nav__top-menu">
 						<a class="page-header__logo" href="#">
-						<img class="page-header__logo-image" src="img/logotype-white-mobile.png" alt="Лого Пинк">
+							<img class="page-header__logo-image" src="img/logotype-white-mobile.png" alt="Лого Пинк">
 						</a>
 						<a class="page-header__logo-tablet" href="#">
-						<img src="img/logotype-white-tablet.png" alt="Logo Pink">
+							<img src="img/logotype-white-tablet.png" alt="Logo Pink">
 						</a>
 						<a class="page-header__logo-desktop" href="#">
-						<img src="img/logotype-white-desktop.png" alt="Logo Pink">
+							<img src="img/logotype-white-desktop.png" alt="Logo Pink">
 						</a>
 						<button class="main-nav__toggle">
-						<img src="img/menu-burger.png" alt="Burger">
+							<img src="img/menu-burger.png" alt="Burger">
 						</button>
 						<ul class="main-nav__list site-list-desktop">
 							<li class="site-list-desktop__item">
@@ -83,34 +83,10 @@
 					<input type="text" id="patronymic" placeholder="Ну и отчество тоже">
 				</div>
 			</div>
-			<div class="mobile-app-tablet">
-				<fieldset>
-					<legend>С каким приложением путешествовали?</legend>
-					<ul class="mobile-app-tablet__list">
-						<li>
-							<div class="input-wrapper">
-								<input class="visually-hidden" type="radio" id="ios" name="platform-tablet" checked>
-								<label for="ios">Pink для iOS</label>
-							</div>
-						</li>
-						<li>
-							<div class="input-wrapper">
-								<input class="visually-hidden" type="radio" id="android" name="platform-tablet">
-								<label for="android">Pink на Android</label>
-							</div>
-						</li>
-						<li>
-							<div class="input-wrapper">
-								<input class="visually-hidden" type="radio" id="windows" name="platform-tablet">
-								<label for="windows">Windows Phone</label>
-							</div>
-						</li>
-					</ul>
-				</fieldset>
-			</div>		
+			<div class="flex-container">
 				<div class="achievements">
 					<p class="achievements__title">
-						Ваши безбашенные<br> достижения в путешествии
+						Ваши безбашенные <br>достижения в путешествии
 					</p>
 					<ul class="achievements__list">
 						<li>
@@ -152,46 +128,52 @@
 					</ul>
 				</div>
 				<div class="contacts-form">
+					<p class="contacts-form__title">
+						Контактная информация
+					</p>
 					<ul class="contacts-form__list">
 						<li>
-							<div class="input-wrapper">
+							<div class="input-wrapper tele-icon">
 								<label for="number">Номер телефона</label>
 								<input type="text" id="number" placeholder="Номер, пожалуйста">
 							</div>
 						</li>
 						<li>
-							<div class="input-wrapper">
+							<div class="input-wrapper email-icon">
 								<label for="email">Адрес почты</label>
 								<input type="text" id="email" placeholder="Введите почту *">
 							</div>
 						</li>
 					</ul>	
 				</div>
-			<div class="mobile-app">
-				<p class="mobile-app__title">
-					С каким приложением<br> путешествовали?
-				</p>
-				<ul class="mobile-app__list">
-					<li>
-						<div class="input-wrapper">
-							<input class="visually-hidden" type="radio" id="ios" name="platform" checked>
-							<label for="ios">Pink для iOS</label>
-						</div>
-					</li>
-					<li>
-						<div class="input-wrapper">
-							<input class="visually-hidden" type="radio" id="android" name="platform">
-							<label for="android">Pink на Android</label>
-						</div>
-					</li>
-					<li>
-						<div class="input-wrapper">
-							<input class="visually-hidden" type="radio" id="windows" name="platform">
-							<label for="windows">Windows Phone</label>
-						</div>
-					</li>
-				</ul>
+			<div class="container">
+				<div class="mobile-app">
+					<p class="mobile-app__title">
+						С каким приложением путешествовали?
+					</p>
+					<ul class="mobile-app__list">
+						<li>
+							<div class="input-wrapper">
+								<input class="visually-hidden" type="radio" id="ios" name="platform" checked>
+								<label for="ios">Pink для iOS</label>
+							</div>
+						</li>
+						<li>
+							<div class="input-wrapper">
+								<input class="visually-hidden" type="radio" id="android" name="platform">
+								<label for="android">Pink на Android</label>
+							</div>
+						</li>
+						<li>
+							<div class="input-wrapper">
+								<input class="visually-hidden" type="radio" id="windows" name="platform">
+								<label for="windows">Windows Phone</label>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
+		</div>
 			<div class="emotion-description">
 				<p class="emotion-description__title">
 					Опишите свои эмоции
