@@ -1,0 +1,489 @@
+.contest-form {
+	&__title {
+		text-align: center;
+		line-height: 30px;
+		color: @darkblue;
+		padding-top: 30px;
+		max-width: 280px;
+		margin: 0 auto;
+	}
+	&__information {
+		padding-left: 20px;
+		padding-right: 20px;
+		.input-wrapper {
+			color: @pink;
+			font-size: 14px;
+			line-height: 30px;
+			width: 100%;
+			input::-webkit-input-placeholder {
+				color: @darkblue;
+				font-size: 18px;
+				line-height: 30px;
+				font-weight: 300;
+			}
+			span {
+				padding-left: 10px;
+				text-transform: uppercase;
+			}
+			input {
+				border: 2px solid #eeeeee;
+				padding: 15px 15px;
+				font-size: 18px;
+				line-height: 30px;
+				width: 100%;
+				height: 60px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	&__achievements {
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: #f2f2f2;
+		padding-bottom: 30px;
+		&-title {
+			font-size: 14px;
+			line-height: 18px;
+			text-align: center;
+			color: @pink;
+			text-transform: uppercase;
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
+		label {
+			position: relative;
+			font-size: 18px;
+			line-height: 30px;
+			padding-left: 70px;
+			color: @darkblue;
+			display: block;
+		}
+		&-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			input[type="checkbox"] + label::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				width: 35px;
+				height: 35px;
+				border: 2px solid #e5e5e5;
+				background-color: #fff;
+			}
+			input[type="checkbox"]:checked + label::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				background-image: url(../img/tick-checkbox.png);
+				background-size: 22px 16px;
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+		}
+		.input-wrapper {
+			margin-bottom: 50px;
+		}
+	}
+	&__contacts-info {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 40px;
+		padding-top: 40px;
+	.input-wrapper {
+		color: @pink;
+		font-size: 14px;
+		line-height: 30px;
+		width: 100%;
+		input::-webkit-input-placeholder {
+			color: @darkblue;
+			font-size: 18px;
+			line-height: 30px;
+			font-weight: 300;
+		}
+		label {
+			padding-left: 10px;
+			text-transform: uppercase;
+		}
+		input {
+			border: 2px solid #eeeeee;
+			padding: 15px 15px;
+			font-size: 18px;
+			line-height: 30px;
+			width: 100%;
+			height: 60px;
+			margin-bottom: 10px;
+		}
+		
+	}
+		&-title {
+			text-transform: uppercase;
+			color: @pink;
+			position: absolute;
+			top: -15px;
+			left: 150px;
+			right: 150px;
+			text-align: center;
+			margin: 0 auto;
+			background-color: #fff;
+			max-width: 260px;
+			line-height: 30px;
+			font-size: 14px;
+		}
+		&-list {
+			list-style: none;
+			padding: 0;
+		}
+	}
+	&__mobile-app {  
+	background-color: #f2f2f2;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+	&-title {
+		text-align: center;
+		color: @pink;
+		padding-top: 30px;
+		text-transform: uppercase;
+	}
+	label {
+		font-size: 18px;
+		line-height: 30px;
+		padding-left: 60px;
+		display: block;
+		padding-top: 20px;
+		position: relative;
+	}
+	&-list {
+		list-style: none;
+		padding: 0;
+		input[type="radio"] + label::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			height: 35px;	
+			width: 35px;
+			border: 2px solid #e5e5e5;
+			border-radius: 50%;
+			background-color: #fff;
+		}
+		input[type="radio"]:checked + label::after {
+			content: "";
+			position: absolute;
+			left: 10px;
+			bottom: 5px;
+			height: 15px;	
+			width: 15px;
+			border-radius: 50%;
+			background-color: @pink;
+		}
+	}
+		fieldset {
+			border: 2px solid #e5e5e5;
+			position: relative;
+			height: 300px;
+			legend {
+				position: absolute;
+				text-align: center;
+				top: -15px;
+				left: 150px;
+				background-color: #fff;
+				max-width: 360px;
+				font-size: 14px;
+				line-height: 30px;
+				color: @pink;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&__emotion-block { 
+	padding-right: 20px;
+	padding-left: 20px;
+		&-title {
+			text-align: center;
+			color: @pink;
+			text-transform: uppercase;
+			padding-top: 20px;
+		}
+		textarea {
+			width: 100%;
+			font-family: "Open Sans";
+			border: 2px solid #eeeeee;
+			height: 200px;
+			color: @darkblue;
+			padding: 10px;
+			font-size: 18px;
+			line-height: 30px;
+		}
+		textarea::placeholder {
+			color: @darkblue;
+			font-size: 18px;
+			line-height: 30px;
+
+		}
+	}
+	&__send-form {
+	margin-right: 20px;
+	margin-left: 20px;
+	&-button {
+		width: 100%;
+		height: 65px;
+		background-color: #2aab6d;
+		text-transform: uppercase;
+		border-radius: 2px;
+		text-align: center;
+		padding-top: 15px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 30px;
+		}
+	}
+	&-important {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+		span {
+			color: @pink;
+		}
+	}
+}
+}
+@media @mobile {
+	.contest-form {
+		&__title {
+			.tablet {
+				display: none;
+			}
+		}
+		&__contacts-info {
+			&-title {
+				display: none;
+			}
+		}
+	}
+}
+@media @tablet {
+	.contest-form {
+		&__title {
+			font-size: 18px;
+			line-height: 30px;
+			max-width: 500px;
+			margin: 0 auto;
+			margin-bottom: 80px;
+		}
+		&__information {
+			margin: 0 auto;
+			.input-wrapper {
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				align-items: center;
+				margin-bottom: 50px;
+				input {
+
+				}
+				label {
+					flex-shrink: 0;
+					margin-right: 20px;
+				}
+			}
+		}
+		&__achievements {
+			position: relative;
+			border: 2px solid #e5e5e5;
+			background-color: #fff;
+			padding: 0;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 60px;
+			&-title {
+				position: absolute;
+				text-align: center;
+				padding: 0;
+				margin: 0 auto;
+				top: -15px;
+				left: 150px;
+				right: 150px;
+				background-color: #fff;
+				max-width: 430px;
+				font-size: 14px;
+				line-height: 30px;
+				color: @pink;
+				text-transform: uppercase;
+				br {
+					display: none;
+				}
+			}
+			&-list {
+				padding-top: 50px;
+				padding-left: 60px;
+			}
+		}
+		&__contacts-info {
+			position: relative;
+			border: 2px solid #e5e5e5;
+			background-color: #fff;
+			height: 300px;
+			padding: 0; 
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: 70px;
+			margin-bottom: 70px;
+		&-list {
+			padding-left: 60px;
+			padding-right: 60px;
+			padding-top: 50px;
+	
+		}
+		.input-wrapper {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column-reverse;
+			margin-bottom: 15px;
+			input {
+				width: 100%;
+				padding-right: 60px;
+			}
+		}
+		.tele-icon::before,
+		.email-icon::before {
+			content: "";
+			position: absolute;
+			right: 60px;
+			top: 50px;
+			height: 60px;
+			width: 60px;
+			background-color: #e5e5e5;
+			background-image: url("../img/phone.png");
+			background-repeat: no-repeat;
+			background-size: 20px 19px;
+			background-position: center center;
+		}
+		.email-icon::before {
+			top: 173px;
+			background-image: url("../img/mail.png");
+			background-size: 18px 13px;
+		}
+	}
+	&__mobile-app {
+		position: relative;
+		border: 2px solid #e5e5e5;
+		background-color: #fff;
+		height: 300px;
+		padding: 0;
+		margin-left: 20px;
+		margin-right: 20px;
+		&-title {
+			position: absolute;
+			text-align: center;
+			padding: 0;
+			margin: 0 auto;
+			top: -15px;
+			left: 150px;
+			right: 150px;
+			background-color: #fff;
+			max-width: 360px;
+			font-size: 14px;
+			line-height: 30px;
+			color: @pink;
+			text-transform: uppercase;
+			br {
+				display: none;
+			}
+		}
+		&-list {
+			padding: 0;
+			margin: 0;
+			padding-left: 60px;
+			padding-top: 45px;
+			li {
+			margin-bottom: 20px;
+			}
+		}
+	}
+	&__emotion-block {
+		position: relative;
+		border: 2px solid #e5e5e5;
+		background-color: #fff;
+		padding: 0;
+		margin-left: 20px;
+		margin-right: 20px;
+		&-title {
+			position: absolute;
+			text-align: center;
+			padding: 0;
+			margin: 0 auto;
+			top: -15px;
+			left: 150px;
+			right: 150px;
+			background-color: #fff;
+			max-width: 260px;
+			font-size: 14px;
+			line-height: 30px;
+			color: @pink;
+			text-transform: uppercase;
+		}
+		&-wrapper {
+			padding-left: 60px;
+			padding-right: 60px;
+			padding-top: 45px;
+			padding-bottom: 50px;
+		}
+	}
+	&__send-form {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-button {
+			width: 300px;
+		}
+		&-important {
+			margin: 0;
+		}
+	}
+}
+}
+@media @desktop {
+	.contest-form {
+		&__title {
+			margin-top: 100px;
+			margin-bottom: 80px;
+			padding: 0;
+			max-width: 760px;
+			font-size: 18px;
+			line-height: 30px;
+		}
+		&__information {
+			.input-wrapper {
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				align-items: center;
+				margin-bottom: 50px;
+				label {
+					flex-shrink: 0;
+					margin-right: 20px;
+				}
+				input {
+					width: 340px;
+				}
+			}
+		}
+	}
+}

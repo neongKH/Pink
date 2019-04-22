@@ -66,135 +66,135 @@
 	</section>
 	<main class="page-main">
 		<div class="container">
-			<p class="page-main__title">
-				Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! <span class="tablet">Пожалуйста, заполните форму ниже:</span>
-			</p>
-			<form method="post" action="https://echo.htmlacademy.ru">
-				<div class="information">
-					<div class="information__wrapper">
-						<div class="input-wrapper">
-							<label for="surname"><span>Фамилия:</span></label>
-							<input type="text" id="surname" placeholder="Укажите фамилию *">
+			<form class="contest-form" method="post" action="https://echo.htmlacademy.ru">
+					<div class="contest-form__title">
+						Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! <span class="tablet">Пожалуйста, заполните форму ниже:</span>
+					</div>
+					<div class="contest-form__row">
+						<div class="contest-form__information">
+							<div class="contest-form__wrapper">
+								<div class="input-wrapper">
+									<label for="surname"><span>Фамилия:</span></label>
+									<input type="text" id="surname" placeholder="Укажите фамилию *">
+								</div>
+								<div class="input-wrapper">
+									<label for="name"><span>Имя:</span></label>
+									<input type="text" id="name" placeholder="Введите ваше имя *">
+								</div>
+								<div class="input-wrapper">
+									<label for="patronymic"><span>Отчество:</span></label>
+									<input type="text" id="patronymic" placeholder="Ну и отчество тоже">
+								</div>
+							</div>
 						</div>
-						<div class="input-wrapper">
-							<label for="name"><span>Имя:</span></label>
-							<input type="text" id="name" placeholder="Введите ваше имя *">
+						<div class="contest-form__achievements">
+							<p class="contest-form__achievements-title">
+								Ваши безбашенные <br>достижения в путешествии
+							</p>
+							<ul class="contest-form__achievements-list">
+								<li>
+									<div class="input-wrapper">
+										<input class="visually-hidden" type="checkbox" id="selfie" checked="">
+										<label for="selfie">Сделал селфи с акулой</label>
+									</div>
+								</li>
+								<li>
+									<div class="input-wrapper">
+										<input class="visually-hidden" type="checkbox" id="beach" checked="">
+										<label for="beach">Обгорел на пляже</label>
+									</div>
+								</li>
+								<li>
+									<div class="input-wrapper">
+										<input class="visually-hidden" type="checkbox" id="see">
+										<label for="see">Видел Чака Норриса</label>
+									</div>
+								</li>
+								<li>
+									<div class="input-wrapper">
+									<input class="visually-hidden" type="checkbox" id="buy">
+										<label for="buy">Накупил сувениров</label>
+									</div>
+								</li>
+								<li>
+									<div class="input-wrapper">
+										<input class="visually-hidden" type="checkbox" id="tower" checked="">
+										<label for="tower">Удержал башню</label>
+									</div>
+								</li>
+								<li>
+									<div class="input-wrapper">
+										<input class="visually-hidden" type="checkbox" id="hotel">
+										<label for="hotel">Разгромил отель</label>
+									</div>
+								</li>
+							</ul>
 						</div>
-						<div class="input-wrapper">
-							<label for="patronymic"><span>Отчество:</span></label>
-							<input type="text" id="patronymic" placeholder="Ну и отчество тоже">
+						<div class="contest-form__contacts-info">
+							<p class="contest-form__contacts-info-title">
+								Контактная информация
+							</p>
+							<ul class="contest-form__contacts-info-list">
+								<li>
+									<div class="input-wrapper tele-icon">
+										<label for="number">Номер телефона</label>
+										<input type="text" id="number" placeholder="Номер, пожалуйста">
+									</div>
+								</li>
+								<li>
+									<div class="input-wrapper email-icon">
+										<label for="email">Адрес почты</label>
+										<input type="text" id="email" placeholder="Введите почту *">
+									</div>
+								</li>
+							</ul>	
+						</div>
+						<div class="contest-form__mobile-app">
+							<p class="contest-form__mobile-app-title">
+								С каким приложением <br> путешествовали?
+							</p>
+							<ul class="contest-form__mobile-app-list">
+								<li>
+									<div class="input-wrapper">
+										<input class="visually-hidden" type="radio" id="ios" name="platform" checked="">
+										<label for="ios">Pink для iOS</label>
+									</div>
+								</li>
+								<li>
+									<div class="input-wrapper">
+										<input class="visually-hidden" type="radio" id="android" name="platform">
+										<label for="android">Pink на Android</label>
+									</div>
+								</li>
+								<li>
+									<div class="input-wrapper">
+										<input class="visually-hidden" type="radio" id="windows" name="platform">
+										<label for="windows">Windows Phone</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="contest-form__bottom-row">
+							<div class="contest-form__emotion-block">
+								<p class="contest-form__emotion-block-title">
+									Опишите свои эмоции
+								</p>
+								<div class="contest-form__emotion-block-wrapper">
+								<textarea name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+								</div>
+							</div>
+							<div class="contest-form__send-form">
+								<p class="contest-form__send-form-button">
+									<a href="#">Отправить форму</a>
+								</p>
+								<p class="contest-form__send-form-important">
+									<span>*</span> &mdash; Обязательные поля
+								</p>
+							</div>
 						</div>
 					</div>
+				</form>
 				</div>
-				<div class="flex-container">
-					<div class="achievements">
-						<p class="achievements__title">
-							Ваши безбашенные <br>достижения в путешествии
-						</p>
-						<ul class="achievements__list">
-							<li>
-								<div class="input-wrapper">
-									<input class="visually-hidden" type="checkbox" id="selfie" checked="">
-									<label for="selfie">Сделал селфи с акулой</label>
-								</div>
-							</li>
-							<li>
-								<div class="input-wrapper">
-									<input class="visually-hidden" type="checkbox" id="beach" checked="">
-									<label for="beach">Обгорел на пляже</label>
-								</div>
-							</li>
-							<li>
-								<div class="input-wrapper">
-									<input class="visually-hidden" type="checkbox" id="see">
-									<label for="see">Видел Чака Норриса</label>
-								</div>
-							</li>
-							<li>
-								<div class="input-wrapper">
-								<input class="visually-hidden" type="checkbox" id="buy">
-									<label for="buy">Накупил сувениров</label>
-								</div>
-							</li>
-							<li>
-								<div class="input-wrapper">
-									<input class="visually-hidden" type="checkbox" id="tower" checked="">
-									<label for="tower">Удержал башню</label>
-								</div>
-							</li>
-							<li>
-								<div class="input-wrapper">
-									<input class="visually-hidden" type="checkbox" id="hotel">
-									<label for="hotel">Разгромил отель</label>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="contacts-form">
-						<p class="contacts-form__title">
-							Контактная информация
-						</p>
-						<ul class="contacts-form__list">
-							<li>
-								<div class="input-wrapper tele-icon">
-									<label for="number">Номер телефона</label>
-									<input type="text" id="number" placeholder="Номер, пожалуйста">
-								</div>
-							</li>
-							<li>
-								<div class="input-wrapper email-icon">
-									<label for="email">Адрес почты</label>
-									<input type="text" id="email" placeholder="Введите почту *">
-								</div>
-							</li>
-						</ul>	
-					</div>
-				<div class="container">
-					<div class="mobile-app">
-						<p class="mobile-app__title">
-							С каким приложением <br> путешествовали?
-						</p>
-						<ul class="mobile-app__list">
-							<li>
-								<div class="input-wrapper">
-									<input class="visually-hidden" type="radio" id="ios" name="platform" checked="">
-									<label for="ios">Pink для iOS</label>
-								</div>
-							</li>
-							<li>
-								<div class="input-wrapper">
-									<input class="visually-hidden" type="radio" id="android" name="platform">
-									<label for="android">Pink на Android</label>
-								</div>
-							</li>
-							<li>
-								<div class="input-wrapper">
-									<input class="visually-hidden" type="radio" id="windows" name="platform">
-									<label for="windows">Windows Phone</label>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-				<div class="emotion-description">
-					<p class="emotion-description__title">
-						Опишите свои эмоции
-					</p>
-					<div class="emotion-description__wrapper">
-					<textarea name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-					</div>
-				</div>
-				<div class="send-form">
-					<p class="send-form__button">
-						<a href="#">Отправить форму</a>
-					</p>
-					<p class="send-form__important">
-						<span>*</span> &mdash; Обязательные поля
-					</p>
-				</div>
-			</form>
-			</div>
 	</main>
 	<footer class="main-footer">
 		<div class="footer-inner">
