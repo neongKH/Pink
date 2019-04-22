@@ -642,12 +642,30 @@ template {
   padding-left: 20px;
   padding-right: 20px;
 }
+.page-main__title {
+  text-align: center;
+  line-height: 30px;
+  color: #283645;
+  padding-top: 30px;
+  max-width: 280px;
+  margin: 0 auto;
+}
 @media (max-width: 767px) {
   .page-main__offer-tablet {
     display: none;
   }
+  .page-main__title .tablet {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .page-main__title {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
   .page-main__offer {
     display: none;
   }
@@ -672,6 +690,14 @@ template {
   }
 }
 @media (min-width: 1200px) {
+  .page-main__title {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    padding: 0;
+    max-width: 760px;
+    font-size: 18px;
+    line-height: 30px;
+  }
   .page-main__offer {
     display: none;
   }
@@ -705,6 +731,19 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .page-main form {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .advantages {
@@ -1833,14 +1872,6 @@ template {
   padding-left: 20px;
   padding-right: 20px;
 }
-.information__title {
-  text-align: center;
-  line-height: 30px;
-  color: #283645;
-  padding-top: 30px;
-  max-width: 280px;
-  margin: 0 auto;
-}
 .information .input-wrapper {
   color: #d22856;
   font-size: 14px;
@@ -1866,21 +1897,9 @@ template {
   height: 60px;
   margin-bottom: 10px;
 }
-@media (max-width: 767px) {
-  .information__title .tablet {
-    display: none;
-  }
-}
 @media (min-width: 768px) and (max-width: 1199px) {
   .information {
     margin: 0 auto;
-  }
-  .information__title {
-    font-size: 18px;
-    line-height: 30px;
-    max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 80px;
   }
   .information .input-wrapper {
     display: -moz-flex;
@@ -1901,13 +1920,8 @@ template {
   }
 }
 @media (min-width: 1200px) {
-  .information__title {
-    margin-top: 100px;
-    margin-bottom: 80px;
-    padding: 0;
-    max-width: 760px;
-    font-size: 18px;
-    line-height: 30px;
+  .information {
+    width: 48%;
   }
   .information .input-wrapper {
     display: -moz-flex;
@@ -1928,9 +1942,6 @@ template {
   }
   .information .input-wrapper input {
     width: 340px;
-  }
-  .information__wrapper {
-    width: 48%;
   }
 }
 .achievements {
@@ -2013,6 +2024,11 @@ template {
   .achievements__list {
     padding-top: 50px;
     padding-left: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .achievements {
+    width: 48%;
   }
 }
 .contacts-form {
@@ -2121,6 +2137,11 @@ template {
     top: 173px;
     background-image: url("../img/mail.png");
     background-size: 18px 13px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts-form {
+    width: 48%;
   }
 }
 .mobile-app {
@@ -2315,6 +2336,11 @@ template {
     padding-right: 60px;
     padding-top: 45px;
     padding-bottom: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .emotion-description {
+    width: 48%;
   }
 }
 .footer-social {
@@ -2553,6 +2579,11 @@ template {
   }
   .send-form__important {
     margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .send-form {
+    width: 48%;
   }
 }
 *,

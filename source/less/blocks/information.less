@@ -1,14 +1,6 @@
 .information {  
 	padding-left: 20px;
 	padding-right: 20px;
-	&__title {
-		text-align: center;
-		line-height: 30px;
-		color: @darkblue;
-		padding-top: 30px;
-		max-width: 280px;
-		margin: 0 auto;
-	}
 	.input-wrapper {
 		color: @pink;
 		font-size: 14px;
@@ -37,23 +29,13 @@
 }
 @media @mobile {
 	.information {
-		&__title {
-			.tablet {
-				display: none;
-			}
-		}
+		
 	}
 }
 @media @tablet {
 	.information {
 		margin: 0 auto;
-		&__title {
-			font-size: 18px;
-			line-height: 30px;
-			max-width: 500px;
-			margin: 0 auto;
-			margin-bottom: 80px;
-		}
+	
 		.input-wrapper {
 			display: -webkit-flex;
 			display: -moz-flex;
@@ -74,14 +56,7 @@
 }
 @media @desktop {
 	.information {
-		&__title {
-			margin-top: 100px;
-			margin-bottom: 80px;
-			padding: 0;
-			max-width: 760px;
-			font-size: 18px;
-			line-height: 30px;
-		}
+		width: 48%;
 		.input-wrapper {
 			display: -webkit-flex;
 			display: -moz-flex;
@@ -99,7 +74,7 @@
 			}
 		}
 		&__wrapper {
-			width: 48%;
+			
 		}
 	}
 }

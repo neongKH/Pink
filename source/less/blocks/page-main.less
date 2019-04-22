@@ -9,17 +9,36 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	&__title {
+		text-align: center;
+		line-height: 30px;
+		color: @darkblue;
+		padding-top: 30px;
+		max-width: 280px;
+		margin: 0 auto;
+	}
 }
 @media @mobile {
 	.page-main {
 		&__offer-tablet {
 			display: none;
 		}
+		&__title {
+			.tablet {
+				display: none;
+			}
+		}
 	}
 }
 @media @tablet {
-	
 	.page-main {
+		&__title {
+			font-size: 18px;
+			line-height: 30px;
+			max-width: 500px;
+			margin: 0 auto;
+			margin-bottom: 80px;
+		}
 		&__offer {
 			display: none;
 		}
@@ -46,6 +65,14 @@
 }
 @media @desktop {
 	.page-main {
+		&__title {
+			margin-top: 100px;
+			margin-bottom: 80px;
+			padding: 0;
+			max-width: 760px;
+			font-size: 18px;
+			line-height: 30px;
+		}
 		&__offer {
 			display: none;
 		}
@@ -76,6 +103,15 @@
 			display: flex;
 			flex-direction: row;
 			
+		}
+		form {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
 		}
 	}
 }
