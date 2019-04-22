@@ -1,4 +1,4 @@
-.mobile-app { 
+.mobile-app {  
 	background-color: #f2f2f2;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -87,6 +87,9 @@
 			line-height: 30px;
 			color: @pink;
 			text-transform: uppercase;
+			br {
+				display: none;
+			}
 		}
 		&__list {
 			padding: 0;
@@ -97,6 +100,19 @@
 			margin-bottom: 20px;
 			}
 		}
+	}
+	.flex-container {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+@media @desktop {
+	.mobile-app {
+		width: 48%;
 	}
 	.flex-container {
 		display: -webkit-flex;

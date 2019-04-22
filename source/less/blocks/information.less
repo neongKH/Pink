@@ -72,3 +72,34 @@
 		}
 	}
 }
+@media @desktop {
+	.information {
+		&__title {
+			margin-top: 100px;
+			margin-bottom: 80px;
+			padding: 0;
+			max-width: 760px;
+			font-size: 18px;
+			line-height: 30px;
+		}
+		.input-wrapper {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			align-items: center;
+			margin-bottom: 50px;
+			label {
+				flex-shrink: 0;
+				margin-right: 20px;
+			}
+			input {
+				width: 340px;
+			}
+		}
+		&__wrapper {
+			width: 48%;
+		}
+	}
+}
