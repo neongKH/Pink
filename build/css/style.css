@@ -706,19 +706,6 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .page-main form {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
 }
 .advantages {
   background-color: #f2f2f2;
@@ -2303,7 +2290,7 @@ template {
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .contest-form {
+  .contest-form__row {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -2315,6 +2302,11 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contest-form__bottom-row {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
   .contest-form__title {
     font-size: 18px;
     line-height: 30px;
@@ -2323,7 +2315,6 @@ template {
     margin-bottom: 80px;
   }
   .contest-form__information {
-    margin: 0 auto;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -2480,9 +2471,6 @@ template {
     padding: 0;
     margin-left: 20px;
     margin-right: 20px;
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
   }
   .contest-form__emotion-block-title {
     position: absolute;
@@ -2518,9 +2506,6 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
   }
   .contest-form__send-form-button {
     width: 300px;
@@ -2530,6 +2515,36 @@ template {
   }
 }
 @media (min-width: 1200px) {
+  .contest-form {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contest-form__row {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .contest-form__title {
     margin-top: 100px;
     margin-bottom: 80px;
@@ -2537,6 +2552,13 @@ template {
     max-width: 760px;
     font-size: 18px;
     line-height: 30px;
+  }
+  .contest-form__information {
+    width: 435px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 0;
   }
   .contest-form__information .input-wrapper {
     display: -moz-flex;
@@ -2556,7 +2578,62 @@ template {
     margin-right: 20px;
   }
   .contest-form__information .input-wrapper input {
-    width: 340px;
+    width: 100%;
+  }
+  .contest-form__mobile-app {
+    width: 435px;
+    position: relative;
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+    height: 300px;
+    padding: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .contest-form__mobile-app-title {
+    position: absolute;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    top: -15px;
+    left: 35px;
+    background-color: #fff;
+    width: 370px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #d22856;
+    text-transform: uppercase;
+  }
+  .contest-form__mobile-app-title br {
+    display: none;
+  }
+  .contest-form__mobile-app-list {
+    padding: 0;
+    margin: 0;
+    padding-left: 60px;
+    padding-top: 45px;
+  }
+  .contest-form__mobile-app-list li {
+    margin-bottom: 20px;
+  }
+  .contest-form__contacts-info {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .contest-form__achievements {
+    width: 100%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .contest-form__bottom-row {
+    width: 100%;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
 }
 *,

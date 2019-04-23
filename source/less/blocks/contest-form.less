@@ -269,12 +269,17 @@
 }
 @media @tablet {
 	.contest-form {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		flex-direction: column;
+		&__row {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
+		}
+		&__bottom-row {
+			order: 5;
+		}
 		&__title {
 			font-size: 18px;
 			line-height: 30px;
@@ -283,7 +288,6 @@
 			margin-bottom: 80px;
 		}
 		&__information {
-			margin: 0 auto;
 			order: 1;
 			.input-wrapper {
 				display: -webkit-flex;
@@ -428,7 +432,7 @@
 		padding: 0;
 		margin-left: 20px;
 		margin-right: 20px;
-		order: 5;
+	
 		&-title {
 			position: absolute;
 			text-align: center;
@@ -459,7 +463,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		order: 6;
 		&-button {
 			width: 300px;
 		}
@@ -471,6 +474,23 @@
 }
 @media @desktop {
 	.contest-form {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		&__row {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-around;			
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
 		&__title {
 			margin-top: 100px;
 			margin-bottom: 80px;
@@ -480,6 +500,9 @@
 			line-height: 30px;
 		}
 		&__information {
+			width: 435px;
+			order: 1;
+			padding: 0;
 			.input-wrapper {
 				display: -webkit-flex;
 				display: -moz-flex;
@@ -493,9 +516,56 @@
 					margin-right: 20px;
 				}
 				input {
-					width: 340px;
+					width: 100%;
 				}
 			}
+		}
+		&__mobile-app {
+			width: 435px;
+			position: relative;
+			border: 2px solid #e5e5e5;
+			background-color: #fff;
+			height: 300px;
+			padding: 0;
+			order: 2;
+			&-title {
+				position: absolute;
+				text-align: center;
+				padding: 0;
+				margin: 0 auto;
+				top: -15px;
+				left: 35px;
+				background-color: #fff;
+				width: 370px;
+				font-size: 14px;
+				line-height: 30px;
+				color: #d22856;
+				text-transform: uppercase;
+				br {
+					display: none;
+				}
+			}
+			&-list {
+				padding: 0;
+				margin: 0;
+				padding-left: 60px;
+				padding-top: 45px;
+				li {
+					margin-bottom: 20px;
+				}
+			}
+		}
+		&__contacts-info {
+			width: 100%;
+			order: 3;
+		}
+		&__achievements {
+			width: 100%;
+			order: 4;
+		}
+		&__bottom-row {
+			width: 100%;
+			order: 5;
 		}
 	}
 }
