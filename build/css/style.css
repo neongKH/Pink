@@ -2303,6 +2303,18 @@ template {
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .contest-form {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .contest-form__title {
     font-size: 18px;
     line-height: 30px;
@@ -2312,6 +2324,9 @@ template {
   }
   .contest-form__information {
     margin: 0 auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .contest-form__information .input-wrapper {
     display: -moz-flex;
@@ -2338,6 +2353,9 @@ template {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 60px;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
   .contest-form__achievements-title {
     position: absolute;
@@ -2371,6 +2389,9 @@ template {
     margin-right: 20px;
     margin-top: 70px;
     margin-bottom: 70px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .contest-form__contacts-info-list {
     padding-left: 60px;
@@ -2421,6 +2442,9 @@ template {
     padding: 0;
     margin-left: 20px;
     margin-right: 20px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .contest-form__mobile-app-title {
     position: absolute;
@@ -2456,6 +2480,9 @@ template {
     padding: 0;
     margin-left: 20px;
     margin-right: 20px;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
   .contest-form__emotion-block-title {
     position: absolute;
@@ -2491,6 +2518,9 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
   }
   .contest-form__send-form-button {
     width: 300px;

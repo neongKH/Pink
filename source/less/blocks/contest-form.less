@@ -269,6 +269,12 @@
 }
 @media @tablet {
 	.contest-form {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
 		&__title {
 			font-size: 18px;
 			line-height: 30px;
@@ -278,6 +284,7 @@
 		}
 		&__information {
 			margin: 0 auto;
+			order: 1;
 			.input-wrapper {
 				display: -webkit-flex;
 				display: -moz-flex;
@@ -303,6 +310,7 @@
 			margin-left: 20px;
 			margin-right: 20px;
 			margin-bottom: 60px;
+			order: 4;
 			&-title {
 				position: absolute;
 				text-align: center;
@@ -336,6 +344,7 @@
 			margin-right: 20px;
 			margin-top: 70px;
 			margin-bottom: 70px;
+			order: 3;
 		&-list {
 			padding-left: 60px;
 			padding-right: 60px;
@@ -383,6 +392,7 @@
 		padding: 0;
 		margin-left: 20px;
 		margin-right: 20px;
+		order: 2;
 		&-title {
 			position: absolute;
 			text-align: center;
@@ -418,6 +428,7 @@
 		padding: 0;
 		margin-left: 20px;
 		margin-right: 20px;
+		order: 5;
 		&-title {
 			position: absolute;
 			text-align: center;
@@ -448,6 +459,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		order: 6;
 		&-button {
 			width: 300px;
 		}
