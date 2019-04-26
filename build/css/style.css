@@ -2122,7 +2122,7 @@ template {
   color: #283645;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .contest-form__contacts-info .input-wrapper label {
   padding-left: 10px;
@@ -2647,7 +2647,7 @@ template {
     margin: 0;
     padding-top: 43px;
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 120px;
   }
   .contest-form__contacts-info .input-wrapper {
     display: -moz-flex;
@@ -2671,8 +2671,8 @@ template {
   .contest-form__contacts-info .email-icon::before {
     content: "";
     position: absolute;
-    right: 60px;
-    top: 50px;
+    left: 420px;
+    top: 43px;
     height: 60px;
     width: 60px;
     background-color: #e5e5e5;
@@ -2682,7 +2682,8 @@ template {
     background-position: center center;
   }
   .contest-form__contacts-info .email-icon::before {
-    top: 173px;
+    top: 43px;
+    left: 965px;
     background-image: url("../img/mail.png");
     background-size: 18px 13px;
   }
