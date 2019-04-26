@@ -19,7 +19,7 @@
 				color: @darkblue;
 				font-size: 18px;
 				line-height: 30px;
-				font-weight: 300;
+				font-weight: 400;
 			}
 			span {
 				padding-left: 10px;
@@ -338,7 +338,7 @@
 				padding-left: 60px;
 			}
 		}
-		&__contacts-info {
+	&__contacts-info {
 			position: relative;
 			border: 2px solid #e5e5e5;
 			background-color: #fff;
@@ -503,6 +503,7 @@
 			width: 435px;
 			order: 1;
 			padding: 0;
+			margin-left: 35px;
 			.input-wrapper {
 				display: -webkit-flex;
 				display: -moz-flex;
@@ -527,6 +528,7 @@
 			background-color: #fff;
 			height: 300px;
 			padding: 0;
+			margin-right: 35px;
 			order: 2;
 			&-title {
 				position: absolute;
@@ -558,6 +560,62 @@
 		&__contacts-info {
 			width: 100%;
 			order: 3;
+			position: relative;
+			border: 2px solid #e5e5e5;
+			background-color: #fff;
+			height: 160px;
+			padding: 0; 
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: 70px;
+			margin-bottom: 70px;
+			order: 3;
+		&-list {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			margin: 0;
+			padding-top: 43px;
+			padding-left: 60px;
+			padding-right: 60px;
+	
+		}
+		.input-wrapper {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			width: 375px;
+			flex-direction: column-reverse;
+			margin-bottom: 15px;
+			input {
+				width: 100%;
+				padding-right: 60px;
+			}
+		}
+		.tele-icon::before,
+		.email-icon::before {
+			content: "";
+			position: absolute;
+			right: 60px;
+			top: 50px;
+			height: 60px;
+			width: 60px;
+			background-color: #e5e5e5;
+			background-image: url("../img/phone.png");
+			background-repeat: no-repeat;
+			background-size: 20px 19px;
+			background-position: center center;
+		}
+		.email-icon::before {
+			top: 173px;
+			background-image: url("../img/mail.png");
+			background-size: 18px 13px;
+		}
 		}
 		&__achievements {
 			width: 100%;

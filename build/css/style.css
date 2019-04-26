@@ -2042,7 +2042,7 @@ template {
   color: #283645;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .contest-form__information .input-wrapper span {
   padding-left: 10px;
@@ -2559,6 +2559,7 @@ template {
         -ms-flex-order: 1;
             order: 1;
     padding: 0;
+    margin-left: 35px;
   }
   .contest-form__information .input-wrapper {
     display: -moz-flex;
@@ -2587,6 +2588,7 @@ template {
     background-color: #fff;
     height: 300px;
     padding: 0;
+    margin-right: 35px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -2619,9 +2621,70 @@ template {
   }
   .contest-form__contacts-info {
     width: 100%;
+    position: relative;
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+    height: 160px;
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+  .contest-form__contacts-info-list {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    padding-top: 43px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .contest-form__contacts-info .input-wrapper {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 375px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 15px;
+  }
+  .contest-form__contacts-info .input-wrapper input {
+    width: 100%;
+    padding-right: 60px;
+  }
+  .contest-form__contacts-info .tele-icon::before,
+  .contest-form__contacts-info .email-icon::before {
+    content: "";
+    position: absolute;
+    right: 60px;
+    top: 50px;
+    height: 60px;
+    width: 60px;
+    background-color: #e5e5e5;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    background-position: center center;
+  }
+  .contest-form__contacts-info .email-icon::before {
+    top: 173px;
+    background-image: url("../img/mail.png");
+    background-size: 18px 13px;
   }
   .contest-form__achievements {
     width: 100%;
