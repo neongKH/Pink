@@ -2626,8 +2626,6 @@ template {
     background-color: #fff;
     height: 160px;
     padding: 0;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-top: 70px;
     margin-bottom: 70px;
     -webkit-box-ordinal-group: 4;
@@ -2647,7 +2645,7 @@ template {
     margin: 0;
     padding-top: 43px;
     padding-left: 60px;
-    padding-right: 120px;
+    padding-right: 60px;
   }
   .contest-form__contacts-info .input-wrapper {
     display: -moz-flex;
@@ -2665,7 +2663,10 @@ template {
   }
   .contest-form__contacts-info .input-wrapper input {
     width: 100%;
-    padding-right: 60px;
+    padding-right: 10px;
+  }
+  .contest-form__contacts-info .input-wrapper label {
+    margin-bottom: 0;
   }
   .contest-form__contacts-info .tele-icon::before,
   .contest-form__contacts-info .email-icon::before {
