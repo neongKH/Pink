@@ -586,7 +586,8 @@
 			display: -ms-flex;
 			display: -o-flex;
 			display: flex;
-			width: 375px;
+			position: relative;
+			width: 315px;
 			flex-direction: column-reverse;
 			margin-bottom: 15px;
 			input {
@@ -601,7 +602,7 @@
 		.email-icon::before {
 			content: "";
 			position: absolute;
-			left: 420px;
+			right: 0;
 			top: 43px;
 			height: 60px;
 			width: 60px;
@@ -612,8 +613,6 @@
 			background-position: center center;
 		}
 		.email-icon::before {
-			top: 43px;
-			left: 965px;
 			background-image: url("../img/mail.png");
 			background-size: 18px 13px;
 		}

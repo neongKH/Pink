@@ -2654,7 +2654,8 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 375px;
+    position: relative;
+    width: 315px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -2672,7 +2673,7 @@ template {
   .contest-form__contacts-info .email-icon::before {
     content: "";
     position: absolute;
-    left: 420px;
+    right: 0;
     top: 43px;
     height: 60px;
     width: 60px;
@@ -2683,8 +2684,6 @@ template {
     background-position: center center;
   }
   .contest-form__contacts-info .email-icon::before {
-    top: 43px;
-    left: 965px;
     background-image: url("../img/mail.png");
     background-size: 18px 13px;
   }
