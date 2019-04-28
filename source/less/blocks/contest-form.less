@@ -40,14 +40,13 @@
 		padding-left: 20px;
 		padding-right: 20px;
 		background-color: #f2f2f2;
-		padding-bottom: 30px;
+		padding-bottom: 5px;
 		&-title {
 			font-size: 14px;
 			line-height: 18px;
 			text-align: center;
 			color: @pink;
 			text-transform: uppercase;
-			padding-top: 30px;
 			padding-bottom: 20px;
 		}
 		label {
@@ -88,7 +87,7 @@
 	&__contacts-info {
 		padding-left: 20px;
 		padding-right: 20px;
-		padding-bottom: 40px;
+		padding-bottom: 20px;
 		padding-top: 40px;
 		.input-wrapper {
 			color: @pink;
@@ -176,6 +175,9 @@
 			border-radius: 50%;
 			background-color: @pink;
 		}
+		.input-wrapper {
+			margin-bottom: 20px;
+		}
 	}
 		fieldset {
 			border: 2px solid #e5e5e5;
@@ -202,7 +204,7 @@
 			text-align: center;
 			color: @pink;
 			text-transform: uppercase;
-			padding-top: 20px;
+			padding-top: 40px;
 		}
 		textarea {
 			width: 100%;
@@ -243,7 +245,6 @@
 	&-important {
 		text-align: center;
 		text-transform: uppercase;
-		margin-bottom: 60px;
 		span {
 			color: @pink;
 		}
@@ -253,13 +254,27 @@
 @media @mobile {
 	.contest-form {
 		&__title {
+			margin-bottom: 40px;
 			.tablet {
 				display: none;
 			}
 		}
+		&__information {
+			margin-bottom: 40px;
+		}
+		&__achievements {
+			padding-top: 40px;
+		}
 		&__contacts-info {
 			&-title {
 				display: none;
+			}
+		}
+		&__send-form {
+			&-important {
+				&--tablet {
+					display: none;
+				}
 			}
 		}
 	}
@@ -283,6 +298,7 @@
 			max-width: 500px;
 			margin: 0 auto;
 			margin-bottom: 80px;
+			padding-top: 100px;
 		}
 		&__information {
 			order: 1;
@@ -459,11 +475,17 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		margin-top: 70px;
+		margin-bottom: 60px;
 		&-button {
 			width: 300px;
+			margin: 0;
 		}
 		&-important {
 			margin: 0;
+			&--tablet {
+				display: none;
+			}
 		}
 	}
 }
@@ -554,7 +576,7 @@
 				}
 			}
 		}
-	&__contacts-info {
+		&__contacts-info {
 			width: 100%;
 			order: 3;
 			position: relative;
@@ -562,60 +584,60 @@
 			background-color: #fff;
 			height: 160px;
 			padding: 0; 
-			margin-top: 70px;
+			
 			margin-bottom: 70px;
 			order: 3;
-		&-list {
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-		
-			justify-content: space-between;
-			margin: 0;
-			padding-top: 43px;
-			padding-left: 60px;
-			padding-right: 60px;
-	
-		}
-		.input-wrapper {
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-			position: relative;
-			width: 375px;
-			flex-direction: column-reverse;
-			margin-bottom: 15px;
-			input {
-				width: 100%;
+			&-list {
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+
+				justify-content: space-between;
+				margin: 0;
+				padding-top: 43px;
+				padding-left: 60px;
 				padding-right: 60px;
+
 			}
-			label {
-				margin-bottom: 0;
+			.input-wrapper {
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				position: relative;
+				width: 375px;
+				flex-direction: column-reverse;
+				margin-bottom: 15px;
+				input {
+					width: 100%;
+					padding-right: 60px;
+				}
+				label {
+					margin-bottom: 0;
+				}
+			}
+			.tele-icon::before,
+			.email-icon::before {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 60px;
+				width: 60px;
+				background-color: #e5e5e5;
+				background-image: url("../img/phone.png");
+				background-repeat: no-repeat;
+				background-size: 20px 19px;
+				background-position: center center;
+			}
+			.email-icon::before {
+				background-image: url("../img/mail.png");
+				background-size: 18px 13px;
 			}
 		}
-		.tele-icon::before,
-		.email-icon::before {
-			content: "";
-			position: absolute;
-			right: 0;
-			top: 0;
-			height: 60px;
-			width: 60px;
-			background-color: #e5e5e5;
-			background-image: url("../img/phone.png");
-			background-repeat: no-repeat;
-			background-size: 20px 19px;
-			background-position: center center;
-		}
-		.email-icon::before {
-			background-image: url("../img/mail.png");
-			background-size: 18px 13px;
-		}
-	}
 		&__achievements {
 			width: 100%;
 			position: relative;
