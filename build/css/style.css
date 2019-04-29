@@ -862,12 +862,14 @@ template {
 @media (min-width: 1200px) {
   .advantages {
     position: relative;
+    overflow: hidden;
   }
   .advantages::after {
     content: "";
     position: absolute;
     top: -220px;
-    left: -30px;
+    left: 50%;
+    margin-left: -1000px;
     width: 2000px;
     height: 300px;
     background-color: #fff;
