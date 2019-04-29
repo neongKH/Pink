@@ -140,6 +140,18 @@
 		display: none;
 	}
 	.price-slider__tablet {
+		position: relative;
+		padding-top: 200px;
+		&::after {
+			content: "";
+			position: absolute;
+			top: -230px;
+			left: -30px;
+			width: 2000px;
+			height: 300px;
+			background-color: #fff;
+			transform: rotate(-4deg);
+		}
 		table {
 		width: 940px;
 			td {

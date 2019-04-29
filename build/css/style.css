@@ -335,8 +335,10 @@ template {
   height: 40px;
   margin-left: 40px;
 }
-.page-header__logo-desktop:hover svg {
+.page-header__logo-desktop:hover .logo-pink-white-desktop {
   fill: #d22856;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .page-header__logo-desktop:active {
   opacity: 0.3;
@@ -516,6 +518,10 @@ template {
   background-color: #fff;
   color: #d22856;
   text-decoration: none;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .header-intro__download:active {
   background-color: #fff;
@@ -996,6 +1002,7 @@ template {
     background-repeat: no-repeat;
     background-size: 79px 63px;
     background-position: 50% 70px;
+    z-index: 10;
   }
   .slider__item {
     display: -moz-flex;
@@ -1183,6 +1190,21 @@ template {
   .price-slider {
     display: none;
   }
+  .price-slider__tablet {
+    position: relative;
+    padding-top: 200px;
+  }
+  .price-slider__tablet::after {
+    content: "";
+    position: absolute;
+    top: -230px;
+    left: -30px;
+    width: 2000px;
+    height: 300px;
+    background-color: #fff;
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
   .price-slider__tablet table {
     width: 940px;
   }
@@ -1339,6 +1361,19 @@ template {
   }
   .main-footer__map-tablet {
     display: none;
+  }
+  .main-footer .svg-triangle {
+    position: relative;
+  }
+  .main-footer .svg-triangle .bg-triangle-white-footer {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    fill: red;
+    z-index: 20;
   }
   .footer-inner {
     display: none;

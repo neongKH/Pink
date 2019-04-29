@@ -1,4 +1,4 @@
-.main-footer { 
+.main-footer {  
 	position: relative;
 	&__logo {
 		text-align: center;
@@ -80,6 +80,19 @@
 		}
 		&__map-tablet {
 			display: none;
+		}
+		.svg-triangle {
+			position: relative;
+			.bg-triangle-white-footer {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: auto;
+				fill: red;
+				z-index: 20;
+			}
 		}
 	}
 	.footer-inner {
