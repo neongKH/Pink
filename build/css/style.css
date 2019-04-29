@@ -1051,6 +1051,17 @@ template {
     width: 60px;
     height: 42px;
     top: 210px;
+    cursor: pointer;
+  }
+  .reviews-toggle .arrow {
+    fill: #bec2c7;
+  }
+  .reviews-toggle .arrow:hover {
+    fill: #7e868f;
+  }
+  .reviews-toggle .arrow:active {
+    fill: #e9ebec;
+    outline: none;
   }
   .toggle-prev {
     left: 0;
@@ -1195,12 +1206,14 @@ template {
   .price-slider__tablet {
     position: relative;
     padding-top: 200px;
+    overflow: hidden;
   }
   .price-slider__tablet::after {
     content: "";
     position: absolute;
     top: -230px;
-    left: -30px;
+    left: 50%;
+    margin-left: -1000px;
     width: 2000px;
     height: 300px;
     background-color: #fff;
@@ -1374,7 +1387,6 @@ template {
     left: 0;
     width: 100%;
     height: auto;
-    fill: red;
     z-index: 20;
   }
   .footer-inner {
@@ -1389,6 +1401,13 @@ template {
   padding-bottom: 30px;
   background-color: #fff;
   z-index: 10;
+}
+.contacts .mail a:hover {
+  color: #283645;
+  text-decoration: underline;
+}
+.contacts .mail a:active {
+  color: #ced0d2;
 }
 .contacts p {
   padding-top: 10px;
@@ -2001,6 +2020,13 @@ template {
   padding-bottom: 30px;
   background-color: #fff;
   z-index: 10;
+}
+.contacts-tablet .mail a:hover {
+  color: #283645;
+  text-decoration: underline;
+}
+.contacts-tablet .mail a:active {
+  color: #ced0d2;
 }
 .contacts-tablet__question {
   font-size: 46px;

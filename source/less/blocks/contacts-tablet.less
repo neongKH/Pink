@@ -1,4 +1,4 @@
-.contacts-tablet {
+.contacts-tablet { 
 	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -6,12 +6,23 @@
 	padding-bottom: 30px;
 	background-color: #fff;
 	z-index: 10;
-	
+	.mail {
+		a {
+			&:hover {
+				color: @darkblue;
+				text-decoration: underline;
+			}
+			&:active {
+				color: #ced0d2;
+			}
+		}
+	}
 	&__question {
 		font-size: 46px;
 		line-height: 50px;
 		font-weight: 300;
 		padding-bottom: 55px;
+		
 	}
 	span {
 		font-weight: bold;
