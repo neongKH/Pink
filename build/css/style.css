@@ -1300,20 +1300,6 @@ template {
 .main-footer {
   position: relative;
 }
-.main-footer .svg-triangle {
-  display: block;
-  position: absolute;
-  top: 340px;
-  left: 0;
-  width: 1920px;
-  left: 50%;
-  margin-left: -960px;
-  height: auto;
-  z-index: 1;
-}
-.main-footer .svg-triangle .bg-triangle-white-footer {
-  width: 100%;
-}
 .main-footer__logo {
   text-align: center;
 }
@@ -1368,6 +1354,7 @@ template {
 @media (max-width: 767px) {
   .main-footer {
     position: relative;
+    overflow: hidden;
   }
   .main-footer .svg-triangle {
     display: block;
@@ -1404,8 +1391,7 @@ template {
   .main-footer .svg-triangle {
     display: block;
     position: absolute;
-    top: 340px;
-    left: 0;
+    top: 390px;
     width: 1920px;
     left: 50%;
     margin-left: -960px;
