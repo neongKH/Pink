@@ -1,5 +1,19 @@
 .main-footer {  
 	position: relative;
+	.svg-triangle {
+		display: block;
+		position: absolute;
+		top: 340px;
+		left: 0;
+		width: 1920px;
+		left: 50%;
+		margin-left: -960px;
+		height: auto;
+		z-index: 1;
+		.bg-triangle-white-footer {
+			width: 100%;
+		}
+	}
 	&__logo {
 		text-align: center;
 	}
@@ -52,6 +66,21 @@
 }
 @media @mobile {
 	.main-footer {
+		position: relative;
+		.svg-triangle {
+			display: block;
+			position: absolute;
+			top: 340px;
+			left: 0;
+			width: 1920px;
+			left: 50%;
+			margin-left: -960px;
+			height: auto;
+			z-index: 1;
+			.bg-triangle-white-footer {
+				width: 100%;
+			}
+		}
 		&__map-tablet {
 			display: none;
 		}
@@ -62,12 +91,28 @@
 }
 @media @tablet {
 	.main-footer {
+		overflow: hidden;
+		position: relative;
 		&__map {
 			display: none;
 		}
 		&__map-desktop {
 			display: none;
 		} 
+		.svg-triangle {
+			display: block;
+			position: absolute;
+			top: 340px;
+			left: 0;
+			width: 1920px;
+			left: 50%;
+			margin-left: -960px;
+			height: auto;
+			z-index: 1;
+			.bg-triangle-white-footer {
+				width: 100%;
+			}
+		}
 	}
 	.footer-inner {
 		display: none;
@@ -75,6 +120,8 @@
 }
 @media @desktop {
 	.main-footer {
+		position: relative;
+		overflow: hidden;
 		&__map {
 			display: none;
 		}
@@ -82,15 +129,18 @@
 			display: none;
 		}
 		.svg-triangle {
-			position: relative;
-			.bg-triangle-white-footer {
 				display: block;
 				position: absolute;
-				top: 0;
+				top: 397px;
 				left: 0;
-				width: 100%;
+				width: 1920px;
+				left: 50%;
+				margin-left: -960px;
+			
 				height: auto;
 				z-index: 20;
+			.bg-triangle-white-footer {
+				width: 100%;
 			}
 		}
 	}
