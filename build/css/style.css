@@ -1304,8 +1304,8 @@ template {
   text-align: center;
 }
 .main-footer__map {
-  position: absolute;
-  bottom: -220px;
+  position: relative;
+  margin-top: -400px;
   z-index: -1;
   height: 620px;
   overflow: hidden;
@@ -1359,8 +1359,7 @@ template {
   .main-footer .svg-triangle {
     display: block;
     position: absolute;
-    top: 340px;
-    left: 0;
+    top: 270px;
     width: 1920px;
     left: 50%;
     margin-left: -960px;
@@ -1442,6 +1441,7 @@ template {
   padding-bottom: 30px;
   background-color: #fff;
   z-index: 10;
+  position: relative;
 }
 .contacts .mail a:hover {
   color: #283645;
