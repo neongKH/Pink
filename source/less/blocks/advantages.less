@@ -2,7 +2,7 @@
 	background-color: #f2f2f2;
 	position: relative;
 	overflow: hidden;
-	ul {
+	&__list {
 		padding: 0;
 		margin: 0 auto;
 		list-style: none;
@@ -48,8 +48,22 @@
 @media @tablet {
 	.advantages { 
 		height: 480px;
-		ul {
-
+		position: relative;
+		overflow: hidden;
+		z-index: 10;
+		&::after {
+			content: "";
+			position: absolute;
+			top: -260px;
+			left: 50%;
+			margin-left: -1000px;
+			width: 2000px;
+			height: 300px;
+			background-color: #fff;
+			transform: rotate(-4deg);
+			z-index: 1;
+		}
+		&__list {
 			padding: 0;
 			margin: 0;
 			margin-top: 50px;
@@ -84,6 +98,7 @@
     		margin: 0 auto;
 			overflow: hidden;
 			margin-left: -310px;
+			z-index: 10;
 		}
 	}
 }
@@ -101,8 +116,9 @@
 			height: 300px;
 			background-color: #fff;
 			transform: rotate(-4deg);
+			z-index: 1;
 		}
-		ul {
+		&__list {
 			max-width: 940px;
 			display: -webkit-flex;
 			display: -moz-flex;
@@ -157,8 +173,10 @@
 @media (min-width: 2000px) {
 	.advantages {
 		&::after {
-			width: 100%;
-			height: auto;
+			width: 120%;
+			height: 14vw;
+			margin-left: 0;
+			transform: translateX(-50%) rotate(-4deg);
 		}
 	}
 }

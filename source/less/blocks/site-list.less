@@ -2,7 +2,11 @@
 	padding: 0;
 	list-style: none;
 	display: none;
-	
+	.active {
+		a {
+			color: #d22856;
+		}
+	}
 	&__item {
 		background-color: #283645;
 		text-transform: uppercase;
@@ -15,10 +19,18 @@
 		border-bottom: 1px solid #000000;
 		border-top: 1px solid #485461;
 		font-weight: bold;
+		
 		a {
 			color: #ffffff;
 			text-decoration: none;
 			vertical-align: middle;
+			&:hover {
+				color: #d22856;
+			}
+			&:active {
+				color: #d22856;
+				opacity: 0.3;
+			}
 		}
 	}
 	&-desktop {

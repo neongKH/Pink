@@ -1,4 +1,4 @@
-.footer-bottom { 
+.footer-bottom {  
 	width: 100%;
 	height: 100px;
 	background-color: #fff;
@@ -20,22 +20,80 @@
 		
 	}
 	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		border: 3px solid #eeeeee;
 		border-radius: 50%;
 		width: 50px;
 		height: 50px;
 		text-align: center;
-		padding-top: 10px;
 		margin-right: 10px;
+		cursor: pointer;
+		transition: .1s;
+		
+		svg {
+			fill: #d22856;
+		}
+		&:hover {
+			border: 3px solid #000;
+			
+		}
+		&:active {
+			border: 3px solid #e9ebec;
+			svg {
+				opacity: 0.3;
+			}
+		}
 	}
 	&__copyright {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
 		span {
 			margin-right: 10px;
+			margin-bottom: 10px;
+			font-size: 18px;
+			line-height: 18px;
+		}
+		.logo-htmlacademy {
+			fill: #d22856;
+			&:hover {
+				fill: @darkblue;
+			}	
+			&:active {
+				fill: @darkblue;
+				opacity: 0.3;
+			}
+		}
+	}
+	&-logo {
+		.logo-pink-blue-mobile {
+			&:hover {
+				fill: #d22856;
+			}
+			&:active {
+				fill: #000;
+				opacity: 0.3
+			}
 		}
 	}
 	&-logo-desktop {
 		width: 147px;
 		height: 40px;
+		cursor: pointer;
+		.logo-pink-blue-desktop {
+			&:hover {
+				fill: #d22856;
+			}
+			&:active {
+				fill: #000;
+				opacity: 0.3
+			}
+		}
 	}
 }
 @media @mobile {
@@ -48,6 +106,12 @@
 		&-logo-desktop {
 			display: none;
 		}
+		&__copyright {
+			span {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}				
 	}
 }
 @media @desktop {

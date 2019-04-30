@@ -1,4 +1,4 @@
-.main-nav {
+.main-nav { 
 	&__top-menu {
 		display: flex;
 		justify-content: space-between;
@@ -11,6 +11,16 @@
 		background-color: transparent;
 		font-size: 0;
 		border: none;
+		.icon-menu--burger {
+			fill: #fff;
+			&:hover {
+				fill: #d22856;
+			}
+			&:active {
+				fill: #d22856;
+				opacity: 0.3;
+			}
+		}
 	}
 }
 @media @tablet {
