@@ -929,6 +929,12 @@ template {
     display: none;
   }
 }
+@media (min-width: 2000px) {
+  .advantages::after {
+    width: 100%;
+    height: auto;
+  }
+}
 .slider {
   margin: 0;
   padding: 0;
@@ -1228,6 +1234,12 @@ template {
     font-size: 18px;
     line-height: 30px;
     padding-left: 20px;
+  }
+}
+@media (min-width: 2000px) {
+  .price-slider__tablet::after {
+    width: 100%;
+    height: auto;
   }
 }
 .app-effect {
