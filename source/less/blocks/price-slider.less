@@ -1,4 +1,4 @@
-.price-slider { 
+.price-slider {  
 	background-color: #f2f2f2;
 	padding-top: 70px;
 	overflow: hidden;
@@ -20,6 +20,12 @@
 			font-size: 18px;
 			line-height: 30px;
 			text-transform: uppercase;
+			position: relative;
+			img {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
 			span {
 				font-weight: lighter;
 				font-size: 24px;
@@ -54,7 +60,6 @@
 		text-align: center;
 	}
 	&__tablet {
-		
 		width: 100%;
 		margin: 0 auto;
 		padding-top: 90px;
@@ -74,7 +79,12 @@
 				font-size: 18px;
 				line-height: 30px;
 				text-transform: uppercase;
-				
+				position: relative;
+				img {
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
 				span {
 					font-weight: 300;
 					font-size: 24px;
@@ -161,6 +171,12 @@
 				font-size: 18px;
 				line-height: 30px;
 				padding-left: 20px;
+			}
+			th {
+				img {
+					width: 74px;
+					height: 73px;
+				}
 			}
 		}
 	}
