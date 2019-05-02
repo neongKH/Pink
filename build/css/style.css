@@ -1381,6 +1381,14 @@ template {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.main-footer__map .map-marker {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -10px;
+  width: 36px;
+  height: 35px;
+}
 .main-footer__map-tablet {
   width: 100%;
   height: 690px;
@@ -2370,6 +2378,9 @@ template {
             flex-direction: column;
     margin-top: 40px;
   }
+  .footer-bottom--hide {
+    display: none;
+  }
   .footer-bottom__copyright {
     margin-bottom: 40px;
   }
@@ -2425,12 +2436,6 @@ template {
   line-height: 30px;
   width: 100%;
 }
-.contest-form__information .input-wrapper input::-webkit-input-placeholder {
-  color: #283645;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-}
 .contest-form__information .input-wrapper span {
   padding-left: 10px;
   text-transform: uppercase;
@@ -2446,6 +2451,12 @@ template {
   -webkit-transition: 0.1s;
   transition: 0.1s;
   outline: none;
+}
+.contest-form__information .input-wrapper input::-webkit-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
 }
 .contest-form__information .input-wrapper input:hover {
   border: 2px solid #283645;
@@ -2488,6 +2499,14 @@ template {
   height: 35px;
   border: 2px solid #e5e5e5;
   background-color: #fff;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.contest-form__achievements-list input[type="checkbox"] + label:hover::before {
+  border-color: #283645;
+}
+.contest-form__achievements-list input[type="checkbox"] + label:active::before {
+  border-color: #d22856;
 }
 .contest-form__achievements-list input[type="checkbox"]:checked + label::before {
   content: "";
@@ -2513,12 +2532,6 @@ template {
   line-height: 30px;
   width: 100%;
 }
-.contest-form__contacts-info .input-wrapper input::-webkit-input-placeholder {
-  color: #283645;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-}
 .contest-form__contacts-info .input-wrapper label {
   padding-left: 10px;
   text-transform: uppercase;
@@ -2531,6 +2544,21 @@ template {
   width: 100%;
   height: 60px;
   margin-bottom: 10px;
+  outline: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.contest-form__contacts-info .input-wrapper input:hover {
+  border: 2px solid #283645;
+}
+.contest-form__contacts-info .input-wrapper input:focus {
+  border: 2px solid #d22856;
+}
+.contest-form__contacts-info .input-wrapper input::-webkit-input-placeholder {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
 }
 .contest-form__contacts-info-title {
   text-transform: uppercase;
@@ -2584,9 +2612,14 @@ template {
   border-radius: 50%;
   background-color: #fff;
   cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
-.contest-form__mobile-app-list input[type="radio"] + label::before:hover::before {
+.contest-form__mobile-app-list input[type="radio"] + label:hover::before {
   border-color: #283645;
+}
+.contest-form__mobile-app-list input[type="radio"] + label:active::before {
+  border-color: #d22856;
 }
 .contest-form__mobile-app-list input[type="radio"]:checked + label::after {
   content: "";
@@ -2638,6 +2671,15 @@ template {
   padding: 10px;
   font-size: 18px;
   line-height: 30px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  outline: none;
+}
+.contest-form__emotion-block textarea:hover {
+  border-color: #283645;
+}
+.contest-form__emotion-block textarea:focus {
+  border-color: #d22856;
 }
 .contest-form__emotion-block textarea::-webkit-input-placeholder {
   color: #283645;
@@ -2673,6 +2715,13 @@ template {
   font-size: 18px;
   line-height: 30px;
   border: none;
+}
+.contest-form__send-form-button:hover {
+  background-color: #1c9b5e;
+}
+.contest-form__send-form-button:active {
+  background-color: #1c9b5e;
+  color: #52ab7c;
 }
 .contest-form__send-form-important {
   text-align: center;
