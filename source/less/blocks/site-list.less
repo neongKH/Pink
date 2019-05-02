@@ -97,8 +97,11 @@
 				background-color: #fff;
 				transition: .2s;
 			}	
-			&.active:hover::after {
-				background-color: #d22856;
+			&:hover {
+				color: #d22856;
+				&.active::after {
+					background-color: #d22856;		
+				}
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-.contest-form {
+.contest-form { 
 	&__title {
 		text-align: center;
 		line-height: 30px;
@@ -33,6 +33,16 @@
 				width: 100%;
 				height: 60px;
 				margin-bottom: 10px;
+				transition: .1s;
+				outline: none;
+				&:hover {
+					border: 2px solid #283645;
+					
+				}
+				&:focus {
+					border: 2px solid @pink;
+					
+				}
 			}
 		}
 	}
@@ -151,6 +161,7 @@
 		display: block;
 		padding-top: 20px;
 		position: relative;
+		
 	}
 	&-list {
 		list-style: none;
@@ -164,6 +175,12 @@
 			border: 2px solid #e5e5e5;
 			border-radius: 50%;
 			background-color: #fff;
+			cursor: pointer;
+				&:hover {
+					&::before {
+						border-color: #283645;
+					}
+				}
 		}
 		input[type="radio"]:checked + label::after {
 			content: "";
@@ -174,6 +191,7 @@
 			width: 15px;
 			border-radius: 50%;
 			background-color: @pink;
+			cursor: pointer;
 		}
 		.input-wrapper {
 			margin-bottom: 20px;
