@@ -1,4 +1,4 @@
-.posts {  
+.posts {   
 	&__title { 
 		text-align: center;
 		line-height: 30px;
@@ -52,6 +52,19 @@
 	&__panorama {
 		width: 100%;
 		margin: 0 auto;
+		position: relative;
+		&-day {
+			position: absolute;
+			padding: 7px 23px 6px;
+			right: 20px;
+			top: 0;
+			font-size: 12px;
+			line-height: 24px;
+			font-weight: 400;
+			color: #fff;
+			text-transform: uppercase;
+			background-color: #d22856;
+		}
 	}
 }
 @media @mobile {
@@ -141,6 +154,11 @@
 		&__post-photo {
 			height: 300px;
 		}
+		&__panorama {
+			&-day {
+				top: 50px;
+			}
+		}
 	}
 	.posts-wrapper {
 		width: 620px;
@@ -225,6 +243,12 @@
 		}
 		&__post-photo {
 			height: 400px;
+		}
+		&__panorama {
+			&-day {
+				right: 130px;
+				top: 55px;
+			}
 		}
 	}
 	.like {

@@ -6,4 +6,3 @@ toggle.addEventListener('click', function() {
 	nav.classList.add('main-nav__top-menu--opened');
 	sitelist.classList.add('site-list--opened');
 });
-
