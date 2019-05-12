@@ -133,6 +133,19 @@
 		display: none;
 	}
 	.price-slider__tablet {
+		overflow: hidden;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: -260px;
+			left: 50%;
+			margin-left: -1000px;
+			width: 2000px;
+			height: 300px;
+			background-color: #fff;
+			transform: rotate(-4deg);
+		}
 		table {
 			th {
 				height: 80px;

@@ -255,40 +255,54 @@
 				<div class="slider">
 					<ul class="slider__list">
 						<li class="slider__item">
-							<h2 class="slider__item-title">
-								Николай Петров
-							</h2>
-							<p class="slider__item-title--about">
-								25 лет, водитель трамвая
-							</p>
+							<div class="slider__item-wrapper">
+								<h2 class="slider__item-title">
+									Николай Петров
+								</h2>
+								<p class="slider__item-title--about">
+									25 лет, водитель трамвая
+								</p>
+							</div>
 							<p class="slider__item-info">
-								«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+								«Это приложение перевернуло мой мир и позволило по-новому взглянуть 
+								на привычные серые вещи! А еще я познакомился со своей будущей женой в 
+								комментариях к выложенной фотографии!»
+							</p>
+						</li>
+						<li class="slider__item">
+							<div class="slider__item-wrapper">
+								<h2 class="slider__item-title">
+									Вася Николаев
+								</h2>
+								<p class="slider__item-title--about">
+									30 лет, прораб
+								</p>
+							</div>
+							<p class="slider__item-info">
+								«Не следует, однако забывать, что рамки и место 
+								обучения кадров требуют определения и уточнения систем массового участия. Товарищи! 
+								консультация с широким активом позволяет оценить значение модели развития. Значимость 
+								этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает 
+								широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.»
+							</p>
+						</li>
+						<li class="slider__item">
+							<div class="slider__item-wrapper">
+								<h2 class="slider__item-title">
+									Коля Васечкин
+								</h2>
+								<p class="slider__item-title--about">
+									45 лет, смотритель музея
+								</p>
+							</div>
+							<p class="slider__item-info">
+								«Талантливые же личности живут только тем, что творят, поэтому сами по себе неинтересны. Великий поэт — подлинно великий поэт — самое 
+								непоэтическое существо на свете. Но второразрядные поэты — люди просто обворожительные. Чем невыразительнее их поэзия, тем живописнее они 
+								выглядят. Если человек выпустил книжку плохих сонетов, можно заранее сказать, что он совершенно неотразим. Жизнь такого человека наполнена той поэзией, 
+								которую он не в состоянии выразить в своих стихах. А великие поэты изливают на бумаге ту поэзию, которую не осмеливаются вносить в свою жизнь»
 							</p>
 						</li>
 					</ul>
-					<button class="reviews-toggle toggle-prev">
-						<svg class="arrow" width="22" height="41">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left">
-								<svg viewBox="0 0 21.706 41.719" id="icon-arrow-left" width="100%" height="100%">
-								  <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"></path>
-								</svg>
-							</use>
-						</svg>
-					</button>
-					<button class="reviews-toggle toggle-next">
-						<svg class="arrow" width="22" height="41">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right">
-								<svg viewBox="0 0 21.706 41.719" id="icon-arrow-right" width="100%" height="100%">
-								  <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"></path>
-								</svg>
-							</use>
-						</svg>
-					</button>
-					<p class="slider__toggles">
-						<input class="slider__toggle" type="radio" name="slider-toggle">
-						<input class="slider__toggle" type="radio" name="slider-toggle">
-						<input class="slider__toggle" type="radio" name="slider-toggle">
-					</p>
 				</div>
 			</div>
 		</section>
@@ -530,16 +544,9 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/slick.js"></script>
 	<script src="js/smoothscroll.js"></script>
-	<script>
-		var nav = document.querySelector('.main-nav__top-menu');
-		var toggle = document.querySelector('.main-nav__toggle');
-		var sitelist = document.querySelector('.site-list');
-
-		toggle.addEventListener('click', function() {
-			nav.classList.toggle('main-nav__top-menu--opened');
-			sitelist.classList.toggle('site-list--opened');
-		});
-	</script>
+	<script src="js/main.js"></script>
 </body>
 </html>

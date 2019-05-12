@@ -1,4 +1,4 @@
-.slider {
+.slider { 
 	margin: 0;
 	padding: 0;
 	padding-top: 20px;
@@ -6,6 +6,36 @@
 	padding-right: 20px;
 	padding-left: 20px;
 	margin-bottom: 40px;
+	.reviews-toggle {
+		display: block;
+		position: absolute;
+		background-color: transparent;
+		border: none;
+		width: 60px;
+		height: 42px;
+		margin-top: -21px;
+		top: 50%;
+		cursor: pointer;
+		z-index: 5;
+		&.toggle-prev{
+			left: 0;
+		}
+		&.toggle-next{
+			transform: rotate(180deg);
+			right: 0;
+		}
+
+		.arrow {
+			fill: #bec2c7;
+			&:hover {
+				fill: #7e868f;
+			}
+			&:active {
+				fill: #e9ebec;
+				outline: none;
+			}
+		}
+	}
 	&__list {
 		list-style: none;
 		padding: 0;
@@ -23,9 +53,13 @@
 	
 }
 @media @mobile {
-	.reviews-toggle {
-		display: none;
+	.slider {
+		.reviews-toggle {
+			display: none;
+		
+		}
 	}
+	
 }
 @media @tablet {
 	.slider {
@@ -36,25 +70,27 @@
 			display: -o-flex;
 			display: flex;
 			flex-direction: column;
-			max-width: 620px;
-			margin: 0 auto;
+			padding-left: 60px;
+			padding-right: 60px;
 			&-info {
 				font-size: 18px;
+				order: 1;
 				line-height: 30px;
 				margin-bottom: 40px;
 			}
-			&-title {
+			&-wrapper {
 				order: 2;
+			}
+			&-title {
 				margin: 0;
 				margin-bottom: 10px;
 				font-size: 22px;
 				line-height: 30px;
-				&--about {
-					order: 3;
-					color: @darkblue;
-				}
+				
 			}
-			
+			&-title--about {
+				color: @darkblue;
+			}
 		}
 	}
 	.reviews-toggle {
@@ -73,6 +109,7 @@
 		background-size: 79px 63px;
 		background-position: 50% 70px;
 		z-index: 10;
+		
 		&__item {
 			display: -webkit-flex;
 			display: -moz-flex;
@@ -80,8 +117,8 @@
 			display: -o-flex;
 			display: flex;
 			flex-direction: column;
-			max-width: 700px;
-			margin: 0 auto;
+			padding-left: 100px;
+			padding-right: 100px;
 			&-info {
 				font-size: 18px;
 				line-height: 30px;
@@ -103,30 +140,6 @@
 				display: none;
 		}
 	}
-	.reviews-toggle {
-		display: block;
-		position: absolute;
-		background-color: transparent;
-		border: none;
-		width: 60px;
-		height: 42px;
-		top: 210px;
-		cursor: pointer;
-		.arrow {
-			fill: #bec2c7;
-			&:hover {
-				fill: #7e868f;
-			}
-			&:active {
-				fill: #e9ebec;
-				outline: none;
-			}
-		}
-	}
-	.toggle-prev {
-		left: 0;
-	}
-	.toggle-next {
-		right: 0;
-	}
+
+
 }

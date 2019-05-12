@@ -77,7 +77,7 @@ gulp.task("html", function () {
 
 gulp.task('jsmin', function (cb) {
   pump([
-        gulp.src("build/js/main.js"),
+        gulp.src("source/js/main.js"),
         uglify(),
         gulp.dest("build/js")
     ],
@@ -98,6 +98,7 @@ gulp.task("server", function () {
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
   gulp.watch("source/img/*", gulp.series("copyimage"));
+  gulp.watch("source/js/*", gulp.series("jsmin"));
 });
 
 gulp.task("refresh", function (done) {
